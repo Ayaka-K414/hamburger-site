@@ -7,47 +7,57 @@
     <title>Hamburger-site</title>
     <link rel="stylesheet" href="../asset/css/ress.css">
     <link rel="stylesheet" href="../asset/css/style.css">
+<!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c57c614d1.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-        <h1><a href="front-page.html">Hamburger</a></h1>
-        <button>Menu</button>
-        <form action="./archive_search.html" method="post">
-            <input type="search" name="search" autocomplete="on">
-            <button type="submit" name="submit">検索</button>
+    <header class="l-header p-header">
+        <h1 class="p-header__title c-title"><a href="front-page.html">Hamburger</a></h1>
+        <button class="p-header__menu c-menu">Menu</button>
+        <form class="p-form" action="./archive_search.html" method="post">
+            <input class="p-form__input c-input" name="search" autocomplete="on">
+            <i class="fa-solid fa-magnifying-glass c-icon"></i>
+            <button class="p-form__button c-button" name="submit">検索</button>
         </form>
     </header>
-    <div>
-        <h2>ダミーサイト</h2>
-    </div>
-    <ul>
-        <li>
-            <h2>Take Out</h2>
-            <section>
-                <h3>Take OUT</h3>
-                <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
-            </section>
-            <section>
-                <h3>Take OUT</h3>
-                <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
-            </section>
-        </li>
-        <li>
-            <h2>Eat In</h2>
-            <section>
-                <h3>Eat In</h3>
-                <p>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
-            </section>
-            <section>
-                <h3>Eat In</h3>
-                <p>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
-            </section>
-        </li>
-    </ul>
-    <section>
-        <h2>見出しが入ります</h2>
-        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-    </section>
+    <article class="p-article">
+        <div class="p-main-visual">
+            <h2 class="p-main-visual__title c-title">ダミーサイト</h2>
+        </div>
+        <ul class="p-ordermethods">
+            <li class="p-ordermethods__takeout">
+                <h2 class="p-ordermethods__title c-title">Take Out</h2>
+                <dl class="p-ordermethods__dl1">
+                    <dt class="p-ordermethods__dt c-text">Take OUT</dt>
+                    <dd class="p-ordermethods__dt c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+                </dl>
+                <dl class="p-ordermethods__dl2">
+                    <dt class="p-ordermethods__dt c-text">Take OUT</dt>
+                    <dd class="p-ordermethods__dt c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+                </dl>
+            </li>
+            <li class="p-ordermethods__eatin">
+                <h2 class="p-ordermethods__title c-title">Eat In</h2>
+                <dl class="p-ordermethods__dl1">
+                    <dt class="p-ordermethods__dt c-text">Eat In</dt>
+                    <dd class="p-ordermethods__dt c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</d>
+                </dl>
+                <dl class="p-ordermethods__dl2">
+                    <dt class="p-ordermethods__dt c-text">Eat In</dt>
+                    <dd class="p-ordermethods__dt c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                </dl>
+            </li>
+        </ul>
+        <section class="p-map">
+                <h2 class="pmap__title c-title">見出しが入ります</h2>
+                <p class="p-map__text c-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <div class="p-map__bg c-bg"></div>
+        </section>
+    </article>
     <aside>
         <h4>バーガー</h4>
         <ul>
@@ -76,12 +86,12 @@
             <li>コーヒー（Ice/Hot）</li>
         </ul>
     </aside>
-    <footer>
-        <ul>
-            <li>ショップ情報</li>
-            <li>ヒストリー</li>
+    <footer class="l-footer p-footer">
+        <ul class="p-footer__ul">
+            <li class="p-footer__link c-link">ショップ情報</li>
+            <li class="p-footer__link c-link">ヒストリー</li>
         </ul>
-        <small>Copyright: RaiseTech</small>
+        <small class="p-footer__copy c-copy">Copyright: RaiseTech</small>
     </footer>
 </body>
 </html>
