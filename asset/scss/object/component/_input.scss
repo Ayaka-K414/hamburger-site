@@ -1,0 +1,11 @@
+// 変数呼び出し
+@use "../../foundation/variable" as *;
+
+
+.c-input {
+    border: 1px solid $color--titleGray;
+    border-radius: 10px;
+    background-color: $color--titleWhite;
+    width: 216px;
+    height: 46px;
+}

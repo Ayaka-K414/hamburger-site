@@ -15,11 +15,10 @@ a {
 }
 
 .c-button {
-  color: #707070;
-  border: 1px solid #707070;
+  color: black;
+  border: 1px solid black;
   border-radius: 10px;
   background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
-  font-family: "M PLUS 1", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 23.76px;

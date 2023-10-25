@@ -2,8 +2,17 @@ html {
   font-size: 100%;
 }
 
+body {
+  font-family: "M PLUS 1", sans-serif;
+}
+
 a {
   text-decoration: none;
+}
+
+.l-header {
+  height: 215px;
+  background-color: #FFF7EF;
 }
 
 .l-footer {
@@ -15,9 +24,39 @@ a {
   border: 1px solid #707070;
   border-radius: 10px;
   background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 23.76px;
+}
+
+.c-title {
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+.c-title a {
+  color: #707070;
+}
+
+.c-icon {
+  color: #707070;
+  width: 24px;
+  height: 24px;
+}
+
+.c-input {
+  border: 1px solid #707070;
+  border-radius: 10px;
+  background-color: #FFF;
+  width: 216px;
+  height: 46px;
+}
+
+.c-menu {
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0em;
 }
 /*# sourceMappingURL=style.css.map */

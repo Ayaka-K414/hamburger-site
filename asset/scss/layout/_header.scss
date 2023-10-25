@@ -1,0 +1,8 @@
+// 変数呼び出し
+@use "../foundation/variable" as *;
+
+
+.l-header {
+    height: 215px;
+    background-color: $color--header;
+}
