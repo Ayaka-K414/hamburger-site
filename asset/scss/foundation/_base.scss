@@ -1,5 +1,12 @@
+// 変数呼び出し
+@use "./variable" as *;
+
 html {
     font-size: 100%;
+}
+
+body {
+    font-family: $font--MPLUS;
 }
 
 a {

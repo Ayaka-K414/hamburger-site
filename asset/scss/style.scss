@@ -1,7 +1,19 @@
+// Foundation
+
 @use "foundation/base";
 @use "foundation/reset";
+@use "foundation/variable";
+@use "foundation/mixin";
+
+
+// Layout
+
 @use "layout/header";
 @use "layout/main";
 @use "layout/sidebar";
 @use "layout/footer";
+
+
+// Component
 @use "object/component/button";
+@use "object/component/title";
