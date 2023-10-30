@@ -1,0 +1,12 @@
+// 変数呼び出し
+@use "../../foundation/variable" as *;
+
+
+
+.p-sidebar {
+    &__ul {
+        padding-left: 66px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+}

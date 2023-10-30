@@ -40,5 +40,16 @@
 .c-title--map {
     @extend .c-title;
     font-size: 3.0rem;
-    color: $color--titleWhite;
+    line-height: 44.55px;
+    padding-top: 42px;
+    padding-left: 42px;
+    padding-bottom: 15px;
+}
+
+.c-title--sidebar {
+    @extend.c-title;
+    color: $color--titleGray;
+    font-size: 2.4rem;
+    line-height: 35.64px;
+    padding-left: 46px;
 }

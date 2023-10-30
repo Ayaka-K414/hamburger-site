@@ -5,6 +5,8 @@
         background-size: cover;
         height: 642px;
         margin-bottom: 20px;
+        padding-left: 16px;
+        padding-right: 16px;    
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -21,7 +23,7 @@
     align-items: center;
 }
 .p-ordermethods__dl1, .p-ordermethods__dl2 {
-    width: 303px;
-    height: 156px;
+    // width: 303px;
+    // height: 156px;
     margin-bottom: 32px;
 }

@@ -1,0 +1,9 @@
+// 変数呼び出し
+@use "../../foundation/variable" as *;
+
+
+.c-vertical-line {
+    border-left: 2px solid $color--titleWhite;
+    height: 16px;
+    margin: auto 16px;
+}
