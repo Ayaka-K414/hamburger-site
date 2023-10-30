@@ -1,0 +1,9 @@
+// 変数呼び出し
+@use "../../foundation/variable" as *;
+
+
+.p-map {
+    background-color: $color--menubg;
+    background-image: url(../../../../img/front-map.png);
+    background-size: cover;
+}

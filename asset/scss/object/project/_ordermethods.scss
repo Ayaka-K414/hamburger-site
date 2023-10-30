@@ -1,0 +1,27 @@
+.p-ordermethods {
+    margin: 20px;
+    &__takeout {
+        background-image: url(../../../../img/front-takeout.jpg);
+        background-size: cover;
+        height: 642px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__eatin {
+        @extend .p-ordermethods__takeout;
+        background-image: url(../../../../img/front-eatin.jpg);
+    }
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-ordermethods__dl1, .p-ordermethods__dl2 {
+    width: 303px;
+    height: 156px;
+    margin-bottom: 32px;
+}

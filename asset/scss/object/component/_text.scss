@@ -1,0 +1,26 @@
+// 変数呼び出し
+@use "../../foundation/variable" as *;
+
+
+.c-text {
+    color: $color--textBrown;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1.6rem;
+    line-height: 23.76px;
+    padding: 16px;
+}
+
+.c-text--bold {
+    @extend .c-text;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 24px;
+    padding: 16px 0px 0px 16px;
+}
+
+.c-text--map {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 33px;
+    color: $color--titleWhite;
+}

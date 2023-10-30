@@ -1,0 +1,8 @@
+.p-header {
+    position: relative;
+    &__menu {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+}
