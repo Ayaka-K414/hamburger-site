@@ -3,9 +3,42 @@
 
 .c-title {
     font-weight: 700;
-    letter-spacing: 0em;
+    color: $color--titleWhite;
+}
+
+.c-title--roboto1 {   // headerのh1
+    @extend .c-title;
+    color: $color--titleGray;
+    font-family: $font--roboto;
+    font-size: 4.0rem;
+    line-height: 47px;
+    text-align: center;
+    padding-top: 43px;
     a {
         color: $color--titleGray;
     }
 }
 
+.c-title--main-visual {
+    @extend .c-title;
+    font-size: 3.6rem;
+    line-height: 53px;
+    margin-left: 25px
+}
+
+.c-title--roboto2 {   // ulのh2
+    @extend .c-title;
+    font-family: $font--roboto;
+    font-size: 4.1rem;
+    line-height: 48px;
+    color: $color--titleOffwhite;
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-bottom: 19px
+}
+
+.c-title--map {
+    @extend .c-title;
+    font-size: 3.0rem;
+    color: $color--titleWhite;
+}

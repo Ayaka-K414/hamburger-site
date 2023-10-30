@@ -20,3 +20,13 @@
 @use "object/component/icon";
 @use "object/component/input";
 @use "object/component/menu";
+@use "object/component/text";
+@use "object/component/hr";
+
+
+// Project
+@use "object/project/main-visual";
+@use "object/project/ordermethods";
+@use "object/project/map";
+@use "object/project/form";
+@use "object/project/p-header";
