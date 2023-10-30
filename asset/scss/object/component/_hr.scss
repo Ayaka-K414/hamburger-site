@@ -1,0 +1,17 @@
+// 変数呼び出し
+@use "../../foundation/variable" as *;
+
+
+.c-hr {
+    background-color: $color--titleWhite;
+    height: 4px;
+    width: 33.89px;
+    margin-left: 15.5px;
+}
+
+.c-hr--map {
+    background-color: $color--titleWhite;
+    height: 2px;
+    width: 75px;
+    margin-left: 42.5px;
+}
