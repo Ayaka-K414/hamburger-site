@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "M+ M Type-1 (basic latin) Regular", "M+ M Type-1 (general-j) Regular", sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
   color: #FFF;
 }
@@ -18,7 +18,7 @@ a {
 
 .l-header {
   height: 215px;
-  width: 100vw;
+  width: 100%;
   background-color: #FFF7EF;
 }
 
@@ -48,7 +48,8 @@ a {
 }
 
 .c-title, .c-title--sidebar, .c-title--map, .c-title--roboto2, .c-title--main-visual, .c-title--roboto1 {
-  font-family: "M+ M Type-1 (general-j) bold", sans-serif;
+  font-weight: 700;
+  font-family: "M PLUS 1p", sans-serif;
   color: #FFF;
 }
 
@@ -128,7 +129,8 @@ a {
 }
 
 .c-text--bold {
-  font-family: "M+ C Type-1 (basic latin) Bold", "M+ Type-1 (general-j) Bold", sans-serif;
+  font-weight: 700;
+  font-family: "M PLUS 1p", sans-serif;
   font-size: 2.2rem;
   line-height: 24px;
   padding: 16px 0px 0px 16px;

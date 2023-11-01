@@ -12,8 +12,9 @@
 
 .c-text--bold {
     @extend .c-text;
-    // font-weight: 700;
-    font-family:  'M+ C Type-1 (basic latin) Bold','M+ Type-1 (general-j) Bold', sans-serif;
+    font-weight: 700;
+    // font-family:  'M+ C Type-1 (basic latin) Bold','M+ Type-1 (general-j) Bold', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
     font-size: 2.2rem;
     line-height: 24px;
     padding: 16px 0px 0px 16px;
