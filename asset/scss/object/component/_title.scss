@@ -2,7 +2,8 @@
 @use "../../foundation/variable" as *;
 
 .c-title {
-    font-weight: 700;
+    // font-weight: 700;
+    font-family: 'M+ M Type-1 (general-j) bold', sans-serif;;
     color: $color--titleWhite;
 }
 
