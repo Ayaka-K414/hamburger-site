@@ -118,6 +118,47 @@ a {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0em;
+  position: relative;
+}
+.c-menu.is-active {
+  display: none;
+}
+
+.c-menu--close {
+  display: none;
+  display: block;
+  position: relative;
+  top: -30px;
+  right: -5px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+}
+.c-menu--close.is-active {
+  display: block;
+}
+.c-menu--close::before {
+  content: "";
+  display: block;
+  background-color: #707070;
+  position: absolute;
+  z-index: 1000;
+  height: 6px;
+  width: 40px;
+  transform: rotate(45deg);
+  top: 22px;
+  left: 4px;
+}
+.c-menu--close::after {
+  content: "";
+  background-color: #707070;
+  position: absolute;
+  z-index: 1000;
+  height: 6px;
+  width: 40px;
+  transform: rotate(-45deg);
+  top: 22px;
+  right: 5px;
 }
 
 .c-text, .c-text--bold {
@@ -183,6 +224,41 @@ a {
   padding-bottom: 20px;
 }
 
+.c-menubg {
+  background-color: black;
+  width: 100%;
+  height: 1000px;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.c-menubg.is-active {
+  display: block;
+}
+
 .p-main-visual {
   background-image: url(../../../../img/front-main.jpg);
   background-size: cover;
@@ -223,11 +299,14 @@ a {
   background-color: #000000;
   background-image: url(../../../../img/front-map.png);
   background-size: cover;
+  position: relative;
 }
-.p-map__layer {
+.p-map::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2855);
+  position: absolute;
   width: 100%;
-  height: auto;
-  color: rgba(0, 0, 0, 0.28);
+  height: 415px;
 }
 
 .p-form {
@@ -270,6 +349,17 @@ a {
   display: flex;
 }
 
+.p-sidebar {
+  background-color: #F2EDE9;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 120%;
+  width: 328px;
+}
+.p-sidebar.is-active {
+  right: 0;
+}
 .p-sidebar__ul {
   padding-left: 66px;
   padding-top: 40px;

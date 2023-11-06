@@ -4,6 +4,15 @@
 
 
 .p-sidebar {
+    background-color: #F2EDE9;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 120%;
+    width: 328px;
+    &.is-active {
+        right: 0;
+    }
     &__ul {
         padding-left: 66px;
         padding-top: 40px;
