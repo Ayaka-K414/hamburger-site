@@ -125,21 +125,16 @@ a {
 }
 
 .c-menu--close {
-  display: none;
   display: block;
   position: relative;
+  z-index: 1000;
   top: -30px;
   right: -5px;
-  z-index: 1000;
   width: 50px;
   height: 50px;
 }
-.c-menu--close.is-active {
-  display: block;
-}
 .c-menu--close::before {
   content: "";
-  display: block;
   background-color: #707070;
   position: absolute;
   z-index: 1000;
@@ -358,7 +353,7 @@ a {
   width: 328px;
 }
 .p-sidebar.is-active {
-  right: 0;
+  right: -120%;
 }
 .p-sidebar__ul {
   padding-left: 66px;

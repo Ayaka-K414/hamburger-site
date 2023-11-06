@@ -11,7 +11,7 @@
     right: 120%;
     width: 328px;
     &.is-active {
-        right: 0;
+        right: -120%;
     }
     &__ul {
         padding-left: 66px;
