@@ -118,17 +118,13 @@ a {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0em;
-  position: relative;
-}
-.c-menu.is-active {
-  opacity: 0;
 }
 
 .c-menu--close {
   display: block;
   position: relative;
-  top: -30px;
-  right: -5px;
+  top: -178px;
+  left: 270px;
   width: 50px;
   height: 50px;
 }
@@ -234,8 +230,8 @@ a {
           animation-duration: 0.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes fade {
