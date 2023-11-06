@@ -194,6 +194,9 @@ a {
   font-size: 1.8rem;
   line-height: 26.73px;
 }
+.c-link a:visited {
+  color: #FFF;
+}
 
 .c-copy {
   font-size: 1.4rem;

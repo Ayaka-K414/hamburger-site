@@ -6,4 +6,9 @@
 .c-link {
     font-size: 1.8rem;
     line-height: 26.73px;
+    a {
+    &:visited {
+        color: $color--titleWhite;
+        }
+    }
 }
