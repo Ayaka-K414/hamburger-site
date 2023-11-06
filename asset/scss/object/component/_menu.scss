@@ -10,7 +10,7 @@
     letter-spacing: 0em;
     position: relative;
     &.is-active {
-        display: none;
+        opacity: 0;
     }
 }
 
@@ -18,7 +18,6 @@
 .c-menu--close {
     display: block;
     position: relative;
-    z-index: 1000;
     top: -30px;
     right: -5px;
     width: 50px;
@@ -27,7 +26,7 @@
         content: "";
         background-color: $color--titleGray;
         position: absolute;
-        z-index: 1000;
+        z-index: -1000;
         height: 6px;
         width: 40px;
         transform: rotate(45deg);
