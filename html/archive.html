@@ -3,27 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ハンバーガーサイト">
-    <title>Hamburger-site</title>
+    <meta name="description" content="RaiseTech最終課題のハンバーガーサイト">
+    <title>Archive-Hamburger-site</title>
     <link rel="stylesheet" href="../asset/css/ress.css">
     <link rel="stylesheet" href="../asset/css/style.css">
+<!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- M PLUS 1p -->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- M+1m -->
+    <!-- <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
+    <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css"> -->
+<!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4c57c614d1.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-        <h1><a href="front-page.html">Hamburger</a></h1>
-        <button>Menu</button>
-        <form action="./archive_search.html" method="post">
-            <input type="search" name="search" autocomplete="on">
-            <button type="submit" name="submit">検索</button>
+    <header class="l-header p-header">
+        <h1 class="p-header__title c-title--roboto1"><a href="front-page.html">Hamburger</a></h1>
+        <button class="p-header__menu c-menu">Menu</button>
+        <form class="p-form" action="./archive_search.html" method="post">
+            <div class="p-form__input">
+                <input class="p-form__input-child c-input" name="search" autocomplete="on">
+            </div>
+                <button class="p-form__button c-button" name="submit">検索</button>
         </form>
     </header>
-    <div>
-        <h2>Menu:</h2>
-    </div>
-    <section>
-        <h2>小見出しが入ります</h2>
-        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-    </section>
-    <div>
-        <h3>チーズバーガー</h3>
-    </div>
+
+    <main class="l-main">
+        <article class="p-article">
+            <div class="p-main-visual">
+                <h2 class="p-main-visual__title c-title--main-visual">Menu:</h2>
+            </div>
+            <ul class="p-ordermethods">
+                <li class="p-ordermethods__takeout">
+                    <div class="flex1">
+                        <h2 class="p-ordermethods__title c-title--roboto2">Take Out</h2>
+                        <hr class="p-ordermethods__hr c-hr">
+                    </div>
+                    <div class="flex2">
+                        <dl class="p-ordermethods__dl1">
+                            <a href="">
+                                <dt class="p-ordermethods__dt c-text--bold">Take OUT</dt>
+                                <dd class="p-ordermethods__dt c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+                            </a>
+                        </dl>
+                        <dl class="p-ordermethods__dl2">
+                            <a href="">
+                                <dt class="p-ordermethods__dt c-text--bold">Take OUT</dt>
+                                <dd class="p-ordermethods__dt c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+                            </a>
+                        </dl>
+                    </div>
+                </li>
+                <li class="p-ordermethods__eatin">
+                    <div class="flex1">
+                        <h2 class="p-ordermethods__title c-title--roboto2">Eat In</h2>
+                        <hr class="p-ordermethods__hr c-hr">
+                    </div>
+                    <div class="flex2">
+                        <dl class="p-ordermethods__dl1">
+                            <a href="">
+                                <dt class="p-ordermethods__dt c-text--bold">Eat In</dt>
+                                <dd class="p-ordermethods__dt c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                            </a>
+                        </dl>
+                        <dl class="p-ordermethods__dl2">
+                            <a href="">
+                                <dt class="p-ordermethods__dt c-text--bold">Eat In</dt>
+                                <dd class="p-ordermethods__dt c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                            </a>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+            <section class="p-map">
+                    <h2 class="pmap__title c-title--map">見出しが入ります</h2>
+                    <hr class="p-map__hr c-hr--map">
+                    <p class="p-map__text c-text--map">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </section>
+        </article>
+    </main>
+
+    <div class="c-menubg"></div>
+    <aside class="l-sidebar p-sidebar">
+        <button class="p-sidebar__menu c-menu--close"></button>
+        <h4 class="p-sidebar__title c-title--sidebar"><a href="">バーガー</a></h4>
+        <ul class="p-sidebar__ul">
+            <li class="p-sidebar__list c-list"><a href="">ハンバーガー</a></li>
+            <li class="p-sidebar__list c-list"><a href="">チーズバーガー</a></li>
+            <li class="p-sidebar__list c-list"><a href="">テリヤキバーガー</a></li>
+            <li class="p-sidebar__list c-list"><a href="">アボカドバーガー</a></li>
+            <li class="p-sidebar__list c-list"><a href="">フィッシュバーガー</a></li>
+            <li class="p-sidebar__list c-list"><a href="">ベーコンバーガー</a></li>
+            <li class="p-sidebar__list c-list"><a href="">チキンバーガー</a></li>
+        </ul>
+        <h4 class="p-sidebar__title c-title--sidebar"><a href="">サイド</a></h4>
+        <ul class="p-sidebar__ul">
+            <li class="p-sidebar__list c-list"><a href="">ポテト</a></li>
+            <li class="p-sidebar__list c-list"><a href="">サラダ</a></li>
+            <li class="p-sidebar__list c-list"><a href="">ナゲット</a></li>
+            <li class="p-sidebar__list c-list"><a href="">コーン</a></li>
+        </ul>
+        <h4 class="p-sidebar__title c-title--sidebar"><a href="">ドリンク</a></h4>
+        <ul class="p-sidebar__ul">
+            <li class="p-sidebar__list c-list"><a href="">コーラ</a></li>
+            <li class="p-sidebar__list c-list"><a href="">ファンタ</a></li>
+            <li class="p-sidebar__list c-list"><a href="">オレンジ</a></li>
+            <li class="p-sidebar__list c-list"><a href="">アップル</a></li>
+            <li class="p-sidebar__list c-list"><a href="">紅茶（Ice/Hot）</a></li>
+            <li class="p-sidebar__list c-list"><a href="">コーヒー（Ice/Hot）</a></li>
+        </ul>
+    </aside>
+
+    <footer class="l-footer p-footer">
+        <ul class="p-footer__ul">
+            <li class="p-footer__link c-link"><a href="">ショップ情報</a></li>
+            <div class="p-footer__vertical-line c-vertical-line"></div>
+            <li class="p-footer__link c-link"><a href="">ヒストリー</a></li>
+        </ul>
+        <small class="p-footer__copy c-copy">Copyright: RaiseTech</small>
+    </footer>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="../main.js"></script>
+
+</body>
+</html>

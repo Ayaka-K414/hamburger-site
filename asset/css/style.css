@@ -95,6 +95,9 @@ a {
   line-height: 35.64px;
   padding-left: 46px;
 }
+.c-title--sidebar a:visited {
+  color: #707070;
+}
 
 .c-icon {
   color: #707070;
@@ -216,6 +219,9 @@ a {
   color: #707070;
   padding-bottom: 20px;
 }
+.c-list a:visited {
+  color: #707070;
+}
 
 .c-menubg {
   display: none;
@@ -295,13 +301,15 @@ a {
   background-image: url(../../../../img/front-map.png);
   background-size: cover;
   position: relative;
+  z-index: 1;
 }
 .p-map::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.2855);
   position: absolute;
   width: 100%;
-  height: 415px;
+  height: 50%;
+  z-index: -1;
 }
 
 .p-form {

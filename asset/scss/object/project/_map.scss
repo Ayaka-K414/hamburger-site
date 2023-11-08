@@ -7,11 +7,13 @@
     background-image: url(../../../../img/front-map.png);
     background-size: cover;
     position: relative;
+    z-index: 1;
     &::before {
         content: "";
         background-color: rgba($color: #000000, $alpha: 0.2855);
         position: absolute;
         width: 100%;
-        height: 415px;
+        height: 50%;
+        z-index: -1;
     }
 }

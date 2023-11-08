@@ -54,4 +54,9 @@
     font-size: 2.4rem;
     line-height: 35.64px;
     padding-left: 46px;
+    a {
+        &:visited {
+            color: $color--titleGray;
+        }
+    }
 }

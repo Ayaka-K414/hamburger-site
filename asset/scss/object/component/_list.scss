@@ -8,4 +8,9 @@
     line-height: 30px;
     color: $color--titleGray;
     padding-bottom: 20px;
+    a {
+        &:visited {
+            color: $color--titleGray;
+        }
+    }
 }
