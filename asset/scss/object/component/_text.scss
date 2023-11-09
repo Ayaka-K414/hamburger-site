@@ -2,7 +2,8 @@
 @use "../../foundation/variable" as *;
 
 
-.c-text {
+// front-page
+.c-text {   // オーダー方法のテキストボックス内のテキスト
     color: $color--textBrown;
     background: rgba(255, 255, 255, 0.8);
     font-size: 1.6rem;
@@ -10,20 +11,27 @@
     padding: 16px;
 }
 
-.c-text--bold {
+.c-text--bold {   // オーダー方法のテキストボックス内の見出し
     @extend .c-text;
     font-weight: 700;
-    // font-family:  'M+ C Type-1 (basic latin) Bold','M+ Type-1 (general-j) Bold', sans-serif;
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: $font--MPLUS;
     font-size: 2.2rem;
     line-height: 24px;
     padding: 16px 0px 0px 16px;
 }
 
-.c-text--map {
+.c-text--map {   // 地図のテキスト
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 33px;
     color: $color--titleWhite;
     padding: 0 40px 57px;
+}
+
+
+// archive-page
+.c-text--introduction {
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: $color--textBrown;
 }

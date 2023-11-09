@@ -27,6 +27,7 @@
 @use "object/component/vertical-line";
 @use "object/component/list";
 @use "object/component/menubg";
+@use "object/component/image";
 
 
 // Project
@@ -37,3 +38,5 @@
 @use "object/project/p-header";
 @use "object/project/p-footer";
 @use "object/project/p-sidebar";
+@use "object/project/introduction";
+@use "object/project/menu-cards";
