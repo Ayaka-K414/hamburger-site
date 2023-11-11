@@ -1,5 +1,14 @@
+// ==================================================================================
 // 変数呼び出し
+// ==================================================================================
 @use "../../foundation/variable" as *;
+
+
+// ==================================================================================
+// メディアクエリ呼び出し
+// ==================================================================================
+@use "../../foundation/mixin" as *;
+
 
 
 .c-input {
@@ -11,4 +20,20 @@
     margin-right: 16px;
     font-size: 1.6rem;
     padding-left: 38px;
+    position: relative;
+    &::before {
+        content: "\f002";
+        font-weight: 900;
+        font-size: 2.4rem;
+        font-family: "Font Awesome 5 Free";
+        width: 24px;
+        height: 24px;
+        color: #808080;
+        position: absolute;
+        top: 11px;
+        left: 9px;
+    }
+    @include tablet {
+        width: 47.48vw;
+    }
 }
