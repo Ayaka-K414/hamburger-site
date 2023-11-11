@@ -19,6 +19,9 @@
         margin: 40px;
         display: flex;
     }
+    @include pc {
+        margin: 7.8%;
+    }
     &__takeout {
         background-image: url(../../../../img/front-takeout.jpg);
         background-size: cover;
@@ -33,6 +36,10 @@
             margin-right: 40px;
             margin-bottom: 0;
             height: 681px;
+        }
+        @include pc {
+            margin-right: 5.1%;
+            height: 1197px;
         }
     }
     &__eatin {

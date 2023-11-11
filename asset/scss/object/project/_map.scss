@@ -29,5 +29,14 @@
         @include tablet {
             height: 100%;
         }
+        @include pc {
+            width: 61.8%;
+        }
+    }
+    &__res-pc {
+        @include pc {
+            width: 61.8%;
+            padding: 5% 7.8% 1%;
+        }
     }
 }

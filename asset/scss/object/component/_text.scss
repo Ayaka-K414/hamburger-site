@@ -43,6 +43,11 @@
     line-height: 33px;
     color: $color--titleWhite;
     padding: 0 40px 57px;
+    @include pc {
+        font-size: 1.6rem;
+        line-height: 33px;
+        padding-top: 5%;
+    }
 }
 
 

@@ -21,6 +21,12 @@
     font-size: 1.6rem;
     padding-left: 38px;
     position: relative;
+    @include tablet {
+        width: 47.48vw;
+    }
+    @include pc {
+        width: 20.62vw;
+    }
     &::before {
         content: "\f002";
         font-weight: 900;
@@ -32,8 +38,5 @@
         position: absolute;
         top: 11px;
         left: 9px;
-    }
-    @include tablet {
-        width: 47.48vw;
     }
 }

@@ -21,6 +21,9 @@
     @include tablet {
         width: 35.94px;
     }
+    @include pc {
+        width: 63px;
+    }
 }
 
 .c-hr--map {

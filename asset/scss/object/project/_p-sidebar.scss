@@ -26,6 +26,10 @@
     @include tablet {
         width: 367px;
     }
+    @include pc {
+        position: static;
+        height: 100%;
+    }
     &.is-active {
         right: 0;
     }
