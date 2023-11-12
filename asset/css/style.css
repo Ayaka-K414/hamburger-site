@@ -184,11 +184,11 @@ a {
   border-radius: 10px;
   background-color: #FFF;
   width: 57.6vw;
+  max-width: 364px;
   height: 46px;
   margin-right: 16px;
   font-size: 1.6rem;
   padding-left: 38px;
-  position: relative;
 }
 @media screen and (min-width: 768px) {
   .c-input {
@@ -197,20 +197,9 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .c-input {
-    width: 20.62vw;
+    width: 20vw;
+    max-width: 396px;
   }
-}
-.c-input::before {
-  content: "\f002";
-  font-weight: 900;
-  font-size: 2.4rem;
-  font-family: "Font Awesome 5 Free";
-  width: 24px;
-  height: 24px;
-  color: #808080;
-  position: absolute;
-  top: 11px;
-  left: 9px;
 }
 
 .c-menu {
@@ -565,6 +554,21 @@ a {
   display: flex;
   justify-content: center;
   margin: 40px 0;
+}
+.p-form__input {
+  position: relative;
+}
+.p-form__input::before {
+  content: "\f002";
+  font-weight: 900;
+  font-size: 2.4rem;
+  font-family: "Font Awesome 5 Free";
+  width: 24px;
+  height: 24px;
+  color: #808080;
+  position: absolute;
+  top: 11px;
+  left: 9px;
 }
 @media screen and (min-width: 1024px) {
   .p-form {
