@@ -491,12 +491,14 @@ a {
     margin-right: 40px;
     margin-bottom: 0;
     height: 681px;
+    width: 42.8vw;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-ordermethods__takeout, .p-ordermethods__eatin {
     margin-right: 5.1%;
     height: 1197px;
+    width: 40.2vw;
   }
 }
 .p-ordermethods__eatin {
@@ -505,6 +507,12 @@ a {
 @media screen and (min-width: 768px) {
   .p-ordermethods__eatin {
     margin-right: 0;
+    width: 42.8vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-ordermethods__eatin {
+    width: 40.2vw;
   }
 }
 
@@ -649,8 +657,6 @@ body.is-active {
 }
 .p-menu-cards__summary {
   background-color: #3C2B1C;
-  padding-top: 0;
-  margin-top: 0;
 }
 
 @media screen and (min-width: 1024px) {

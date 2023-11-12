@@ -36,10 +36,12 @@
             margin-right: 40px;
             margin-bottom: 0;
             height: 681px;
+            width: 42.8vw;
         }
         @include pc {
             margin-right: 5.1%;
             height: 1197px;
+            width: 40.2vw
         }
     }
     &__eatin {
@@ -47,6 +49,10 @@
         background-image: url(../../../../img/front-eatin.jpg);
         @include tablet {
             margin-right: 0;
+            width: 42.8vw;
+        }
+        @include pc {
+            width: 40.2vw
         }
     }
 }
