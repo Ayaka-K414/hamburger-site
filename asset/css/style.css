@@ -478,7 +478,7 @@ a {
 .p-ordermethods__takeout, .p-ordermethods__eatin {
   background-image: url(../../../../img/front-takeout.jpg);
   background-size: cover;
-  height: 642px;
+  min-height: 642px;
   margin-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
@@ -490,14 +490,14 @@ a {
   .p-ordermethods__takeout, .p-ordermethods__eatin {
     margin-right: 40px;
     margin-bottom: 0;
-    height: 681px;
+    min-height: 681px;
     width: 42.8vw;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-ordermethods__takeout, .p-ordermethods__eatin {
     margin-right: 5.1%;
-    height: 1197px;
+    min-height: 1197px;
     width: 40.2vw;
   }
 }
