@@ -28,6 +28,8 @@
 @use "object/component/list";
 @use "object/component/menubg";
 @use "object/component/image";
+@use "object/component/pagination";
+@use "object/component/container";
 
 
 // Project
@@ -40,7 +42,7 @@
 @use "object/project/p-sidebar";
 @use "object/project/introduction";
 @use "object/project/menu-cards";
+@use "object/project/p-pagination";
 
 
 // Utility
-@use "object/utility/container";

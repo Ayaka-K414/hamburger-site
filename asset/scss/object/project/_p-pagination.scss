@@ -13,14 +13,8 @@
 // ==================================================================================
 // archive-page
 // ==================================================================================
-.p-menu-cards {
-    padding: 0 20px;
-    &__summary {
-        background-color: $color--cardbg;
-        padding: 33px 17px 44px;
-        min-height: 355px;
-    }
-    &__list {
-        padding-top: 20px;
-    }
+.p-pagination {
+    padding: 62px 50px 32px;
+    display: flex;
+    justify-content: space-between;
 }

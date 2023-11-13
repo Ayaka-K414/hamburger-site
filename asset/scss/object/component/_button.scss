@@ -10,6 +10,9 @@
 @use "../../foundation/mixin" as *;
 
 
+// ==================================================================================
+// front-page
+// ==================================================================================
 .c-button {
     color: $color--titleGray;
     border: 1px solid $color--titleGray;
@@ -26,5 +29,27 @@
     }
     @include pc {
         width: 7.08vw;
+    }
+}
+
+
+// ==================================================================================
+// archive-page
+// ==================================================================================
+.c-button--link {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 17px;
+    color: $color--titleGray;
+    display: block;
+    background-color: $color--titleWhite;
+    border-radius: 20px;
+    width: 163px;
+    height: 42px;
+    text-align: center;
+    padding: 12.5px 0;
+    margin: 0 auto;
+    a {
+        color: $color--titleGray;
     }
 }
