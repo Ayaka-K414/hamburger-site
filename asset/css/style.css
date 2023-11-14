@@ -220,7 +220,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .c-title--first-title {
-    padding: 1.7% 0 1.7% 2.4%;
+    padding-bottom: 44px;
   }
 }
 
@@ -228,6 +228,11 @@ a {
   font-size: 1.6rem;
   line-height: 24px;
   padding-bottom: 7px;
+}
+@media screen and (min-width: 1024px) {
+  .c-title--second-title {
+    padding-bottom: 13px;
+  }
 }
 
 .c-icon {
@@ -904,6 +909,7 @@ body.is-active {
 @media screen and (min-width: 1024px) {
   .p-menu-cards__summary {
     min-height: 250px;
+    padding: 44px 63px 70px;
   }
 }
 

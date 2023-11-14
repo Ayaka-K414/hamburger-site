@@ -142,7 +142,7 @@
     line-height: 30px;
     padding-bottom: 21px;
     @include pc {
-        padding: 1.7% 0 1.7% 2.4%;
+        padding-bottom: 44px;
     }
 }
 
@@ -151,4 +151,7 @@
     font-size: 1.6rem;
     line-height: 24px;
     padding-bottom: 7px;
+    @include pc {
+        padding-bottom: 13px;
+    }
 }
