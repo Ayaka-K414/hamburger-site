@@ -131,6 +131,9 @@
     line-height: 42px;
     color: $color--textBrown;
     padding: 32px 0 25px;
+    @include tablet {
+        padding: 38px 0 20px;
+    }
 }
 
 .c-title--first-title {
@@ -138,6 +141,9 @@
     font-size: 2.0rem;
     line-height: 30px;
     padding-bottom: 21px;
+    @include pc {
+        padding: 1.7% 0 1.7% 2.4%;
+    }
 }
 
 .c-title--second-title {

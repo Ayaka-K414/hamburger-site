@@ -14,8 +14,6 @@
 // archive-page
 // ==================================================================================
 .c-pagination {
-    font-size: 1.6rem;
-    line-height: 24px;
     color: $color--titleGray;
     position: relative;
     a {
@@ -27,15 +25,17 @@
             height: 17.07px;
             font-size: 30px;
             font-weight: 100;
-            top: -2px;
+            top: -12px;
             left: -26px;
+            @include tablet {
+                top: -24px;
+                left: -32px;
+            }
         }    
     }
 }
 
-.c-pagination--next {
-    font-size: 1.6rem;
-    line-height: 24px;
+.c-pagination--right {
     color: $color--titleGray;
     position: relative;
     a {
@@ -47,8 +47,53 @@
             height: 17.07px;
             font-size: 30px;
             font-weight: 100;
-            top: -2px;
-            left: 36px;
+            top: -12px;
+            left: 4px;
+            @include tablet {
+                top: -24px;
+                left: -4px;
+            }
         }    
+    }
+}
+
+.c-pagination--page {
+    display: none;
+    @include tablet {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 1px solid $color--titleGray;
+        font-family: $font--roboto;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 33px;
+        text-align: center;
+        a {
+            color: $color--titleGray;
+        }
+    }
+}
+
+.c-pagination--corrent {
+    display: none;
+    @include tablet {
+        display: block;
+        color: $color--titleGray;
+        font-family: $font--roboto;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 33px;
+    }
+}
+
+.c-pagination--forward, .c-pagination--next {
+    font-size: 1.6rem;
+    line-height: 24px;
+    a {
+        color: $color--titleGray;
+    }
+    @include tablet {
+        display: none;
     }
 }

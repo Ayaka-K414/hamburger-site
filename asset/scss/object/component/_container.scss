@@ -19,6 +19,12 @@
     }
 }
 
+.container-article {
+    @include pc {
+        padding: 2.4% 5.2% 0;
+    }
+}
+
 .flex-pc {
     @include pc {
         display: flex;

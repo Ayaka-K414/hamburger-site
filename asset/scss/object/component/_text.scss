@@ -58,6 +58,9 @@
     font-size: 1.6rem;
     line-height: 24px;
     color: $color--textBrown;
+    @include pc {
+        padding-bottom: 40px;
+    }
 }
 
 .c-text--summary {

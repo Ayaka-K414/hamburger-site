@@ -15,12 +15,39 @@
 // ==================================================================================
 .p-menu-cards {
     padding: 0 20px;
+    @include tablet {
+        padding: 0 43px;
+    }
+    &__list {
+        padding-top: 20px;
+        @include pc {
+            padding-top: 30px;
+        }
+    }
+    &__fig {
+        @include tablet {
+        display: flex;
+        }
+    }
+    &__image {
+        @include tablet {
+            width: 50%;
+        }
+        @include pc {
+            min-height: 250px;
+        }
+    }
     &__summary {
         background-color: $color--cardbg;
         padding: 33px 17px 44px;
         min-height: 355px;
-    }
-    &__list {
-        padding-top: 20px;
+        @include tablet {
+            width: 50%;
+            padding: 31px 37px 40px;
+            min-height: 325px;
+        }
+        @include pc {
+            min-height: 250px;
+        }
     }
 }

@@ -17,4 +17,26 @@
     padding: 62px 50px 32px;
     display: flex;
     justify-content: space-between;
+    @include tablet {
+        justify-content: center;
+        align-items: center;
+        width: 598px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include pc {
+        padding: 150px 0 64px;
+    }
+    &__sp-flex {
+        display: flex;
+    }
+    &__notsp {
+        @include tablet {
+            margin-right: 15px;
+            &:first-child {
+                margin-right: 50px;
+            }    
+        }
+    }
 }

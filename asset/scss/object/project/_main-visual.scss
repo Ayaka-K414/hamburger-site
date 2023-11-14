@@ -30,7 +30,7 @@
 // ==================================================================================
 .p-main-visual--archive {
     @extend .p-main-visual;
-    background-image: url(../../../../img/archive-main.jpg);
+    background-image: url(../../../../img/archive-main--sp.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,13 @@
     position: relative;
     z-index: 1;
     @include tablet {
-        background-position: center;
+        background-image: url(../../../../img/archive-main--tab.jpg);
+        background-size: cover;
+    }
+    @include pc {
+        background-image: url(../../../../img/archive-main--pc.jpg);
+        background-size: cover;
+        height: 235px;
     }
     &::before {
         content: "";
