@@ -32,22 +32,21 @@
     &__image {
         @include tablet {
             width: 50%;
+            object-fit: cover;
+            object-position: left;
         }
         @include pc {
-            min-height: 250px;
+            object-fit: cover;
         }
     }
     &__summary {
         background-color: $color--cardbg;
         padding: 33px 17px 44px;
-        min-height: 355px;
         @include tablet {
             width: 50%;
             padding: 31px 37px 40px;
-            min-height: 325px;
         }
         @include pc {
-            min-height: 250px;
             padding: 44px 63px 70px;
         }
     }
