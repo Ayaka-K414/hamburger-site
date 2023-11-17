@@ -11,22 +11,22 @@
 
 
 // ==================================================================================
-// archive-page
+// archive-page ページネーション
 // ==================================================================================
-.c-pagination {
-    color: $color--titleGray;
+.c-pagination {   // 戻るボタン
     position: relative;
+    color: $color--titleGray;
     a {
         color: $color--titleGray;
         &::before {
             content: "\0ab";
             position: absolute;
-            width: 17.53px;
-            height: 17.07px;
-            font-size: 30px;
-            font-weight: 100;
             top: -12px;
             left: -26px;
+            width: 17.53px;
+            height: 17.07px;
+            font-weight: 100;
+            font-size: 30px;
             @include tablet {
                 top: -24px;
                 left: -32px;
@@ -35,20 +35,20 @@
     }
 }
 
-.c-pagination--right {
-    color: $color--titleGray;
+.c-pagination--right {   // 進むボタン
     position: relative;
+    color: $color--titleGray;
     a {
         color: $color--titleGray;
         &::after {
             content: "\0bb";
             position: absolute;
-            width: 17.53px;
-            height: 17.07px;
-            font-size: 30px;
-            font-weight: 100;
             top: -12px;
             left: 4px;
+            width: 17.53px;
+            height: 17.07px;
+            font-weight: 100;
+            font-size: 30px;
             @include tablet {
                 top: -24px;
                 left: -4px;
@@ -57,38 +57,35 @@
     }
 }
 
-.c-pagination--page {
+.c-pagination--page {   // 1〜9
     display: none;
     @include tablet {
         display: block;
         width: 35px;
         height: 35px;
         border: 1px solid $color--titleGray;
-        font-family: $font--roboto;
-        font-size: 1.6rem;
         font-weight: 700;
-        line-height: 33px;
+        font-family: $font--roboto;
         text-align: center;
+        line-height: 33px;
         a {
             color: $color--titleGray;
         }
     }
 }
 
-.c-pagination--corrent {
+.c-pagination--corrent {   // 今のページカウント
     display: none;
     @include tablet {
         display: block;
         color: $color--titleGray;
-        font-family: $font--roboto;
-        font-size: 1.6rem;
         font-weight: 700;
+        font-family: $font--roboto;
         line-height: 33px;
     }
 }
 
-.c-pagination--forward, .c-pagination--next {
-    font-size: 1.6rem;
+.c-pagination--forward, .c-pagination--next {   // SPの前へと次へボタン
     line-height: 24px;
     a {
         color: $color--titleGray;

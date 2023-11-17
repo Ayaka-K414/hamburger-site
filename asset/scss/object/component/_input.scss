@@ -10,17 +10,19 @@
 @use "../../foundation/mixin" as *;
 
 
-
+// ==================================================================================
+// all 検索ボックス
+// ==================================================================================
 .c-input {
-    border: 1px solid $color--titleGray;
-    border-radius: 10px;
-    background-color: $color--titleWhite;
     width: 57.6vw;
     max-width: 364px;
     height: 46px;
-    margin-right: 16px;
-    font-size: 1.6rem;
     padding-left: 38px;
+    margin-right: 16px;
+    border: 1px solid $color--titleGray;
+    border-radius: 10px;
+    background-color: $color--titleWhite;
+    font-size: 1.6rem;
     @include tablet {
         width: 47.48vw;
     }

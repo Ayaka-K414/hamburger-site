@@ -11,19 +11,19 @@
 
 
 // ==================================================================================
-// front-page
+// all
 // ==================================================================================
-.c-button {
-    color: $color--titleGray;
+.c-button {   // 検索ボタン
+    width: 24vw;
+    height: 46px;
     border: 1px solid $color--titleGray;
     border-radius: 10px;
     background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
-    font-family: $font--roboto;
-    font-size: 1.6rem;
+    color: $color--titleGray;
     font-weight: 700;
+    font-size: 1.6rem;
+    font-family: $font--roboto;
     line-height: 23.76px;  
-    width: 24vw;
-    height: 46px;
     @include tablet {
         width: 16.3vw;
     }
@@ -36,20 +36,16 @@
 // ==================================================================================
 // archive-page
 // ==================================================================================
-.c-button--link {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 17px;
-    color: $color--titleGray;
+.c-button--link {   // 詳細を見るボタン
     display: block;
-    background-color: $color--titleWhite;
-    border-radius: 20px;
     width: 163px;
     height: 42px;
-    text-align: center;
+    border-radius: 20px;
     padding: 12.5px 0;
     margin: 0 auto;
-    a {
-        color: $color--titleGray;
-    }
+    background-color: $color--titleWhite;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 17px;
 }

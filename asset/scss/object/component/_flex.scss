@@ -11,22 +11,22 @@
 
 
 // ==================================================================================
-// front-page
+// all PC版のレイアウト
 // ==================================================================================
-.container-main {
-    @include pc {
-        width: 80%;
-    }
-}
-
-.container-article {
-    @include pc {
-        padding: 2.4% 5.2% 0;
-    }
-}
-
-.flex-pc {
+.c-flex--parent-pc {
     @include pc {
         display: flex;
+    }
+}
+
+.c-flex--child-main {
+    @include pc {
+        width: 75%;
+    }
+}
+
+.c-flex--child-sidebar {
+    @include pc {
+        width: 25%;
     }
 }

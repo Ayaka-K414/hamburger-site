@@ -14,14 +14,10 @@
 // archive-page
 // ==================================================================================
 .p-menu-cards {
-    padding: 0 20px;
-    @include tablet {
-        padding: 0 43px;
-    }
     &__list {
-        padding-top: 20px;
+        padding-bottom: 20px;
         @include pc {
-            padding-top: 30px;
+            padding-bottom: 30px;
         }
     }
     &__fig {
@@ -30,18 +26,20 @@
         }
     }
     &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-bottom: 0;
+        margin-bottom: 0;    
         @include tablet {
             width: 50%;
             object-fit: cover;
             object-position: left;
         }
-        @include pc {
-            object-fit: cover;
-        }
     }
     &__summary {
-        background-color: $color--cardbg;
         padding: 33px 17px 44px;
+        background-color: $color--cardbg;
         @include tablet {
             width: 50%;
             padding: 31px 37px 40px;
