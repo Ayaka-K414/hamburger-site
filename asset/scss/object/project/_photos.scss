@@ -11,22 +11,25 @@
 
 
 // ==================================================================================
-// archive-page コンテンツ一番外側のpadding
+// single-page 画像一覧
 // ==================================================================================
-.p-article {
-    padding: 32px 20px;
-    @include tablet {
-        padding: 40px;
+.p-photos {
+    &__top {
+        img {
+            display: block;
+            width: 80%;
+        }
+    & > img {
+        margin: 0 auto 30px;
+        }
     }
-    @include pc {
-        padding: 64px 5.2%;
+    &__list {
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+        &:last-child {
+            margin-bottom: 33px;
+        }
     }
-}
-
-
-// ==================================================================================
-// single-page コンテンツ一番外側のpadding
-// ==================================================================================
-.p-article--single {
-    padding: 34px 20px 69px;
 }

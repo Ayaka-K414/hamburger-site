@@ -1,33 +1,25 @@
 // ==================================================================================
 // 変数呼び出し
 // ==================================================================================
-@use "../foundation/variable" as *;
+@use "../../foundation/variable" as *;
 
 
 // ==================================================================================
 // メディアクエリ呼び出し
 // ==================================================================================
-@use "../foundation/mixin" as *;
+@use "../../foundation/mixin" as *;
 
 
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    color: $color--titleWhite;
-    font-weight: 400;
-    font-size: 1.6rem;
-    font-family: 'M PLUS 1p', sans-serif;
-    line-height: 23.76px;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
+// ==================================================================================
+// single-page ul
+// ==================================================================================
+.p-ul {
     color: $color--titleGray;
+    margin: 1em 0;
+    &:nth-child(even) {
+        text-indent: 1em;
+    }
+    &:last-of-type {
+        padding-bottom: 40px;
+    }
 }

@@ -21,9 +21,7 @@
     background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
     color: $color--titleGray;
     font-weight: 700;
-    font-size: 1.6rem;
     font-family: $font--roboto;
-    line-height: 23.76px;  
     @include tablet {
         width: 16.3vw;
     }
@@ -45,7 +43,6 @@
     margin: 0 auto;
     background-color: $color--titleWhite;
     font-weight: 700;
-    font-size: 1.6rem;
     text-align: center;
     line-height: 17px;
 }

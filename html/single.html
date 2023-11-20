@@ -18,8 +18,13 @@
 
 </head>
 <body>
-    <div class="flex-pc">
-        <div class="container-main">
+<!-- PC2カラム設定のflex親要素 -->
+    <div class="c-flex--parent-pc">
+
+<!-- フッター以外のコンテンツ全体を内包するdiv PC版でflexした時の左側、幅調整-->
+        <div class="c-flex--child-main">
+
+<!-- ヘッダー -->
             <header class="l-header p-header">
                 <h1 class="p-header__title c-title--logo"><a href="front-page.html">Hamburger</a></h1>
                 <button class="p-header__menu c-menu">Menu</button>
@@ -31,121 +36,141 @@
                 </form>
             </header>
 
+<!-- メインコンテンツ -->
             <main class="l-main">
-                <article class="p-article">
-                    <div class="p-main-visual--single">
-                        <h1 class="p-main-visual__title c-title--main-visual">h1 チーズバーガー</h1>
+
+<!-- メインビジュアル -->
+                <div class="p-main-visual--single">
+                    <h1 class="p-main-visual__title c-title--main-visual">h1 チーズバーガー</h1>
+                </div>
+
+<!-- アーティクル -->
+                <article class="p-article--single">
+                    <section class="p-introduction">
+                        <h2 class="p-introduction__title c-title--introduction">見出しh2</h2>
+                        <p class="p-introduction__text c-text--p">Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
+                    </section>
+                    <div class="p-htag">
+                        <h3 class="p-htag__h3 c-title--h3">見出しh3</h3>
+                        <h4 class="p-htag__h4 c-title--h">見出しh4</h4>
+                        <h5 class="p-htag__h5 c-title--h">見出しh5</h5>
+                        <h6 class="p-htag__h6 c-title--h">見出しh6</h6>
                     </div>
-                    <div class="container-article">
-                        <section class="p-introduction">
-                            <h2 class="p-introduction__title c-title--introduction">見出しh2</h2>
-                            <p class="p-introduction__text c-text--introduction">Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
-                        </section>
-                        <div class="p-htag">
-                            <h3 class="p-htag__h3 c-title">見出しh3</h3>
-                            <h4 class="p-htag__h4 c-title">見出しh4</h4>
-                            <h5 class="p-htag__h5 c-title">見出しh5</h5>
-                            <h6 class="p-htag__h6 c-title">見出しh6</h6>
-                        </div>
-                        <blockquote cite="">
-                            <p>Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引</p>
-                            <footer>出典元：<cite><a href="">○○○○○○○○○○○○</a></cite></footer>
-                        </blockquote>
-                        <figure>
-                            <img src="../img/single-introduction.jpg" alt="">
-                            <figcaption>
-                                <figure>
-                                    <img src="../img/single-introduction.jpg" alt="">
-                                    <figcaption>
-                                        <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが</p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="../img/single-introduction.jpg" alt="">
-                                    <figcaption>
-                                        <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが</p>
-                                    </figcaption>
-                                </figure>
-                            </figcaption>
-                        </figure>
-                        <ul>
-                            <li><img src="../img/single-introduction.jpg" alt="">
-                                <ul>
-                                    <li><img src="../img/single-introduction.jpg" alt=""></li>
-                                    <li><img src="../img/single-introduction.jpg" alt=""></li>
-                                    <li><img src="../img/single-introduction.jpg" alt=""></li>
-                                    <li><img src="../img/single-introduction.jpg" alt=""></li>
-                                    <li><img src="../img/single-introduction.jpg" alt=""></li>
-                                    <li><img src="../img/single-introduction.jpg" alt=""></li>
-                                    <li><img src="../img/single-introduction.jpg" alt=""></li>
-                                    <li><img src="../img/single-introduction.jpg" alt=""></li>
-                                    <li><img src="../img/single-introduction.jpg" alt=""></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ol>
-                            <li>リストリストリスト</li>
-                            <li>
-                                リストリストリスト
-                                <ol>
-                                    <li>リスト2リスト2リスト2</li>
-                                    <li>リスト2リスト2リスト2</li>
-                                </ol>
-                            </li>
-                        </ol>
-                        <ol>
-                            <li>リストリストリスト</li>
-                            <li>リストリストリスト</li>
-                        </ol>
-                        <ul>
-                            <li>リストリストリスト</li>
-                            <li>
-                                リストリストリスト
-                                <ul>
-                                    <li>リスト2リスト2リスト2</li>
-                                    <li>リスト2リスト2リスト2</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>リストリストリスト</li>
-                            <li>リストリストリスト</li>
-                        </ul>
-                        <pre>
-                            <code>
-                                &lt;html&gt;
-                                    &lt;head&gt;
-                                    &lt;/head&gt;
-                                    &lt;body&gt;
-                                    &lt;/body&gt;
-                                &lt;/html&gt;
-                            </code>
-                        </pre>
-                        <table>
-                            <tr>
-                              <td>テーブル</td>
-                              <td>テーブル</td>
-                            </tr>
-                            <tr>
-                              <td>テーブル</td>
-                              <td>テーブル</td>
-                            </tr>
-                            <tr>
-                              <td>テーブル</td>
-                              <td>テーブル</td>
-                            </tr>
-                            <tr>
-                              <td>テーブル</td>
-                              <td>テーブル</td>
-                            </tr>
-                            <tr>
-                              <td>テーブル</td>
-                              <td>テーブル</td>
-                            </tr>
-                          </table>
-                          <button>ボタン</button>
-                          <p>boldboldboldboldboldboldbold</p>
-                    </div>
+
+<!-- 引用 -->
+                    <blockquote class="p-blockquote" cite="">
+                        <p class="p-blockquote__text c-text--p">Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用</p>
+                        <footer class="p-blockquote__footer c-text--p">出典元：<cite><a href="">○○○○○○○○○○○○</a></cite></footer>
+                    </blockquote>
+
+<!-- 画像と説明文(逆位置) -->
+                    <figure class="p-single-fig">
+                        <img class="p-single-fig__img" src="../img/single-fig.jpg" alt="">
+                        <figcaption class="p-single-fig__caption">
+                            <figure class="p-single-fig__child">
+                                <div class="p-single-fig__img-child">
+                                    <img src="../img/single-photos.jpg" alt="">
+                                </div>
+                                <figcaption class="p-single-fig__caption-child">
+                                    <p class="p-single-fig__p c-text--p"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="p-single-fig__child">
+                                <div class="p-single-fig__img-child">
+                                    <img class="p-single-fig__img-child" src="../img/single-photos.jpg" alt="">
+                                </div>
+                                <figcaption class="p-single-fig__caption-child">
+                                    <p class="p-single-fig__p c-text--p"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります </p>
+                                </figcaption>
+                            </figure>
+                        </figcaption>
+                    </figure>
+
+<!-- 画像一覧 -->
+                    <ul class="p-photos">
+                        <li class="p-photos__top"><img src="../img/single-photos.jpg" alt="">
+                            <ul class="p-photos__ul">
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+<!-- リスト -->
+                    <ol class="p-ol">
+                        <li class="p-ol__list">リストリストリスト</li>
+                        <li class="p-ol__list">リストリストリスト</li>
+                    </ol>
+                    <ol class="p-ol">
+                        <li class="p-ol__list">リスト2リスト2リスト2</li>
+                        <li class="p-ol__list">リスト2リスト2リスト2</li>
+                    </ol>
+                    <ol class="p-ol">
+                        <li class="p-ol__list">リストリストリスト</li>
+                        <li class="p-ol__list">リストリストリスト</li>
+                    </ol>
+
+                    <ul class="p-ul">
+                        <li class="p-ul__list">リストリストリスト</li>
+                        <li class="p-ul__list">リストリストリスト</li>
+                    </ul>
+                    <ul class="p-ul">
+                        <li class="p-ul__list">リスト2リスト2リスト2</li>
+                        <li class="p-ul__list">リスト2リスト2リスト2</li>
+                    </ul>
+                    <ul class="p-ul">
+                        <li class="p-ul__list">リストリストリスト</li>
+                        <li class="p-ul__list">リストリストリスト</li>
+                    </ul>
+
+<!-- コード表示 -->
+                    <pre class="p-code">
+                        <code class="p-code__text">
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code>
+                    </pre>
+
+<!-- 5*2の表 -->
+                    <table>
+                        <tr>
+                            <td>テーブル</td>
+                            <td>テーブル</td>
+                        </tr>
+                        <tr>
+                            <td>テーブル</td>
+                            <td>テーブル</td>
+                        </tr>
+                        <tr>
+                            <td>テーブル</td>
+                            <td>テーブル</td>
+                        </tr>
+                        <tr>
+                            <td>テーブル</td>
+                            <td>テーブル</td>
+                        </tr>
+                        <tr>
+                            <td>テーブル</td>
+                            <td>テーブル</td>
+                        </tr>
+                        </table>
+
+<!-- 下部 -->
+                        <button>ボタン</button>
+                        <p>boldboldboldboldboldboldbold</p>
+
+<!-- ページネーション -->
                     <ul class="p-pagination">
                         <span class="p-pagination__notsp c-pagination--corrent">page 1/10</span>
                         <div class="p-pagination__sp-flex">
@@ -170,7 +195,8 @@
             </main>
         </div>
 
-        <div class="container-sidebar">
+<!-- メニューサイドバー PC版でflexした時の右側、幅調整-->
+        <div class="c-flex--child-sidebar">
             <div class="c-menubg"></div>
             <aside class="l-sidebar p-sidebar">
                 <button class="p-sidebar__menu c-menu--close"></button>
@@ -204,6 +230,7 @@
         </div>
     </div>
 
+<!-- フッター -->
     <footer class="l-footer p-footer">
         <ul class="p-footer__ul">
             <li class="p-footer__link c-link"><a href="">ショップ情報</a></li>

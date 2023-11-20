@@ -17,7 +17,6 @@
     padding: 16px;
     background: rgba(255, 255, 255, 0.8);
     color: $color--textBrown;
-    line-height: 23.76px;
     @include tablet {
         font-size: 1.4rem;
         line-height: 21px;
@@ -55,8 +54,6 @@
 .c-text--introduction {   // イントロダクションのテキスト
     padding-bottom: 20px;
     color: $color--textBrown;
-    font-size: 1.6rem;
-    line-height: 24px;
     @include pc {
         padding-bottom: 40px;
     }
@@ -65,4 +62,13 @@
 .c-text--summary {   // カード内の説明文
     padding-bottom: 40px;
     line-height: 24px;
+}
+
+
+// ==================================================================================
+// single-page
+// ==================================================================================
+.c-text--p {
+    @extend .c-text--introduction;
+    padding-bottom: 36px;
 }

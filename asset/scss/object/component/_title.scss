@@ -139,8 +139,27 @@
 .c-title--second-title {   // サマリーの小見出し
     padding-bottom: 7px;
     font-weight: 700;
-    line-height: 24px;
     @include pc {
         padding-bottom: 13px;
     }
+}
+
+
+// ==================================================================================
+// single-page
+// ==================================================================================
+.c-title--h {
+    padding-bottom: 28px;
+    color: $color--textBrown;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.c-title--h3 {
+    @extend .c-title--h;
+    padding-bottom: 28px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 35.64px;
 }
