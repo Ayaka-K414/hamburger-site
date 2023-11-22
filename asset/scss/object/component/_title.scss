@@ -150,17 +150,9 @@
 // ==================================================================================
 .c-title--main-visual-single {
     @extend .c-title--main-visual;
+    @include tablet {
     font-size: 6.0rem;
     line-height: 89px;
-}
-.c-title--h {
-    padding-bottom: 28px;
-    color: $color--textBrown;
-    font-size: 2.0rem;
-    font-weight: 700;
-    line-height: 30px;
-    @include tablet {
-        padding-bottom: 57px;
     }
 }
 
@@ -170,6 +162,19 @@
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 35.64px;
+    @include tablet {
+        padding-bottom: 57px;
+        font-size: 2.8rem;
+        line-height: 42px;
+    }
+}
+
+.c-title--h {
+    padding-bottom: 28px;
+    color: $color--textBrown;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 30px;
     @include tablet {
         padding-bottom: 57px;
     }

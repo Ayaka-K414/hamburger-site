@@ -17,6 +17,12 @@
     list-style-type: decimal;
     margin-bottom: 1em;
     color: $color--textBrown;
+    @include tablet {
+        padding-left: 90px;
+    }
+    @include pc {
+        padding-left: 50px;
+    }
     &__list {
         list-style-type: decimal;
         list-style-position: inside;

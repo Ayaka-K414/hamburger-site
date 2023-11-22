@@ -17,29 +17,23 @@
     &__img {
         width: 100%;
         margin-bottom: 30px;
-        @include tablet {
-            margin-bottom: 60px;
-        }
     }
     &__child {
         display: flex;
         justify-content: space-between;
-        width: 100%;
         margin-bottom: 30px;
+        @include pc {
+            margin-bottom: 60px;
+        }
         &:nth-child( even ) {
             flex-direction: row-reverse;
         }
     }
     &__img-child {
+        flex-basis: 50%;
+        flex-shrink: 0;
         img {
             width: 100%;
-            flex-grow: 1;
-        }
-    }
-    &__caption-child {
-        // width: 100%;
-        p {
-            flex-grow: 1;
         }
     }
 }

@@ -16,6 +16,12 @@
 .p-ul {
     margin-bottom: 1em;
     color: $color--textBrown;
+    @include tablet {
+        padding-left: 90px;
+    }
+    @include pc {
+        padding-left: 50px;
+    }
     &__child {
         margin-top: 1em;
         text-indent: 1em;

@@ -55,6 +55,12 @@
     @extend .c-button;
     width: 100%;
     height: 81px;
+    margin-bottom: 30px;
     border-radius: 20px;
     color: $color--textBrown;
+    @include tablet {
+        width: 429px;
+        height: 104px;
+        margin-bottom: 60px;
+    }
 }

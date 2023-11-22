@@ -19,4 +19,8 @@
     margin-bottom: 30px;
     background-color: $color--quote;
     color: $color--textBrown;
+    @include tablet {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
