@@ -41,7 +41,7 @@
 
 <!-- メインビジュアル -->
                 <div class="p-main-visual--single">
-                    <h1 class="p-main-visual__title c-title--main-visual">h1 チーズバーガー</h1>
+                    <h1 class="p-main-visual__title c-title--main-visual-single">h1 チーズバーガー</h1>
                 </div>
 
 <!-- アーティクル -->
@@ -68,19 +68,19 @@
                         <img class="p-single-fig__img" src="../img/single-fig.jpg" alt="">
                         <figcaption class="p-single-fig__caption">
                             <figure class="p-single-fig__child">
-                                <div class="p-single-fig__img-child">
+                                <div class="p-single-fig__img-child u-mgr10">
                                     <img src="../img/single-photos.jpg" alt="">
                                 </div>
                                 <figcaption class="p-single-fig__caption-child">
-                                    <p class="p-single-fig__p c-text--p"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります </p>
+                                    <p class="p-single-fig__text c-text--p"> テキストが入ります テキストが入ります テキストが入ります</p>
                                 </figcaption>
                             </figure>
                             <figure class="p-single-fig__child">
-                                <div class="p-single-fig__img-child">
-                                    <img class="p-single-fig__img-child" src="../img/single-photos.jpg" alt="">
+                                <div class="p-single-fig__img-child u-mgl10">
+                                    <img src="../img/single-photos.jpg" alt="">
                                 </div>
                                 <figcaption class="p-single-fig__caption-child">
-                                    <p class="p-single-fig__p c-text--p"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります </p>
+                                    <p class="p-single-fig__text c-text--p"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります </p>
                                 </figcaption>
                             </figure>
                         </figcaption>
@@ -107,10 +107,12 @@
                     <ol class="p-ol">
                         <li class="p-ol__list">リストリストリスト</li>
                         <li class="p-ol__list">リストリストリスト</li>
-                    </ol>
-                    <ol class="p-ol">
-                        <li class="p-ol__list">リスト2リスト2リスト2</li>
-                        <li class="p-ol__list">リスト2リスト2リスト2</li>
+                        <li>
+                            <ol class="p-ol__child">
+                                <li class="p-ol__child-list">リスト2リスト2リスト2</li>
+                                <li class="p-ol__child-list">リスト2リスト2リスト2</li>
+                            </ol>        
+                        </li>
                     </ol>
                     <ol class="p-ol">
                         <li class="p-ol__list">リストリストリスト</li>
@@ -120,10 +122,12 @@
                     <ul class="p-ul">
                         <li class="p-ul__list">リストリストリスト</li>
                         <li class="p-ul__list">リストリストリスト</li>
-                    </ul>
-                    <ul class="p-ul">
-                        <li class="p-ul__list">リスト2リスト2リスト2</li>
-                        <li class="p-ul__list">リスト2リスト2リスト2</li>
+                        <li>
+                            <ul class="p-ul__child">
+                                <li class="p-ul__child-list">リスト2リスト2リスト2</li>
+                                <li class="p-ul__child-list">リスト2リスト2リスト2</li>
+                            </ul>
+                        </li>    
                     </ul>
                     <ul class="p-ul">
                         <li class="p-ul__list">リストリストリスト</li>
@@ -133,67 +137,42 @@
 <!-- コード表示 -->
                     <pre class="p-code">
                         <code class="p-code__text">
-                            &lt;html&gt;
-                                &lt;head&gt;
-                                &lt;/head&gt;
-                                &lt;body&gt;
-                                &lt;/body&gt;
-                            &lt;/html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
                         </code>
                     </pre>
 
 <!-- 5*2の表 -->
-                    <table>
-                        <tr>
-                            <td>テーブル</td>
-                            <td>テーブル</td>
+                    <table class="p-table">
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
                         </tr>
-                        <tr>
-                            <td>テーブル</td>
-                            <td>テーブル</td>
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
                         </tr>
-                        <tr>
-                            <td>テーブル</td>
-                            <td>テーブル</td>
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
                         </tr>
-                        <tr>
-                            <td>テーブル</td>
-                            <td>テーブル</td>
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
                         </tr>
-                        <tr>
-                            <td>テーブル</td>
-                            <td>テーブル</td>
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
                         </tr>
-                        </table>
+                    </table>
 
 <!-- 下部 -->
-                        <button>ボタン</button>
-                        <p>boldboldboldboldboldboldbold</p>
-
-<!-- ページネーション -->
-                    <ul class="p-pagination">
-                        <span class="p-pagination__notsp c-pagination--corrent">page 1/10</span>
-                        <div class="p-pagination__sp-flex">
-                            <li class="p-pagination__all c-pagination"><a href=""><span></span></a></li>
-                            <li class="p-pagination__sp c-pagination--forward"><a href=""><span>前へ</span></a></li>
-                        </div>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>1</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>2</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>3</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>4</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>5</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>6</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>7</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>8</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>9</span></a></li>
-                        <div class="p-pagination__sp-flex">
-                            <li class="p-pagination__sp c-pagination--next"><a href=""><span>次へ</span></a></li>
-                            <li class="p-pagination__all c-pagination--right"><a href=""><span></span></a></li>
-                        </div>
-                    </ul>
-                </article>
-            </main>
-        </div>
+                        <button class="c-button--large u-mgb30">ボタン</button>
+                        <p class="c-text--bold-single">boldboldboldboldboldboldbold</p>
 
 <!-- メニューサイドバー PC版でflexした時の右側、幅調整-->
         <div class="c-flex--child-sidebar">

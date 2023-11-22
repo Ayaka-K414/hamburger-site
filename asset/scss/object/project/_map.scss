@@ -39,4 +39,10 @@
             padding: 5% 7.8% 1%;
         }
     }
+    &__text {
+        padding: 0 40px 57px;
+        @include pc {
+            padding-top: 5%;
+        }
+    }
 }

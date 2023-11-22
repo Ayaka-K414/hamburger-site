@@ -67,4 +67,7 @@
     @extend .p-main-visual;
     height: 215px;
     background-image: url(../../../../img/single-main.jpg);
+    @include tablet {
+        height: 505px;
+    }
 }
