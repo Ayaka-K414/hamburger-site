@@ -71,3 +71,15 @@
         height: 505px;
     }
 }
+
+
+// ==================================================================================
+// shop-page
+// ==================================================================================
+.p-main-visual--shop {
+    @extend .p-main-visual--single;
+    background-image: url(../../../../img/black-steel-lamp-post-1070945.jpg);
+    @include tablet {
+        height: 505px;
+    }
+}

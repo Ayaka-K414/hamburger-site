@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RaiseTech最終課題のハンバーガーサイト">
+    <title>Shop-Hamburger-site</title>
+    <link rel="stylesheet" href="../asset/css/ress.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+<!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- M PLUS 1p -->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4c57c614d1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- PC2カラム設定のflex親要素 -->
+    <div class="c-flex--parent-pc">
+
+<!-- フッター以外のコンテンツ全体を内包するdiv PC版でflexした時の左側、幅調整-->
+        <div class="c-flex--child-main">
+
+<!-- ヘッダー -->
+            <header class="l-header p-header">
+                <h1 class="p-header__title c-title--logo"><a href="front-page.html">Hamburger</a></h1>
+                <button class="p-header__menu c-menu">Menu</button>
+                <form class="p-form" action="./archive_search.html" method="post">
+                    <div class="p-form__input">
+                        <input class="p-form__input-child c-input" name="search" autocomplete="on">
+                    </div>
+                        <button class="p-form__button c-button" name="submit">検索</button>
+                </form>
+            </header>
+
+<!-- メインコンテンツ -->
+            <main class="l-main">
+
+<!-- メインビジュアル -->
+                <div class="p-main-visual--shop">
+                    <h1 class="p-main-visual__title c-title--main-visual-shop">ショップについて</h1>
+                </div>
+
+<!-- アーティクル -->
+                <article class="p-article--single">
+                    <section class="p-introduction">
+                        <h2 class="p-introduction__title c-title--introduction">見出しh2</h2>
+                        <p class="p-introduction__text c-text--p">Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
+                    </section>
+                    <div class="p-htag">
+                        <h3 class="p-htag__h3 c-title--h3">見出しh3</h3>
+                        <h4 class="p-htag__h4 c-title--h">見出しh4</h4>
+                        <h5 class="p-htag__h5 c-title--h">見出しh5</h5>
+                        <h6 class="p-htag__h6 c-title--h">見出しh6</h6>
+                    </div>
+
+<!-- 引用 -->
+                    <blockquote class="p-blockquote" cite="">
+                        <p class="p-blockquote__text c-text--p">Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用</p>
+                        <footer class="p-blockquote__footer c-text--p">出典元：<cite><a href="">○○○○○○○○○○○○</a></cite></footer>
+                    </blockquote>
+
+<!-- 画像と説明文(逆位置) -->
+                    <figure class="p-single-fig">
+                        <img class="p-single-fig__img" src="../img/single-fig.jpg" alt="">
+                        <figcaption class="p-single-fig__caption">
+                            <figure class="p-single-fig__child">
+                                <div class="p-single-fig__img-child u-mgr10">
+                                    <img src="../img/single-photos.jpg" alt="">
+                                </div>
+                                <figcaption class="p-single-fig__caption-child">
+                                    <p class="p-single-fig__text c-text--p"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入りますテキストが入ります </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="p-single-fig__child">
+                                <div class="p-single-fig__img-child u-mgl10">
+                                    <img src="../img/single-photos.jpg" alt="">
+                                </div>
+                                <figcaption class="p-single-fig__caption-child">
+                                    <p class="p-single-fig__text c-text--p"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります </p>
+                                </figcaption>
+                            </figure>
+                        </figcaption>
+                    </figure>
+
+<!-- 画像一覧 -->
+                    <ul class="p-photos">
+                        <li class="p-photos__top"><img src="../img/single-photos.jpg" alt="">
+                            <ul class="p-photos__ul">
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+<!-- リスト -->
+                    <ol class="p-ol">
+                        <li class="p-ol__list">リストリストリスト</li>
+                        <li class="p-ol__list">リストリストリスト</li>
+                        <li>
+                            <ol class="p-ol__child">
+                                <li class="p-ol__child-list">リスト2リスト2リスト2</li>
+                                <li class="p-ol__child-list">リスト2リスト2リスト2</li>
+                            </ol>        
+                        </li>
+                    </ol>
+                    <ol class="p-ol">
+                        <li class="p-ol__list">リストリストリスト</li>
+                        <li class="p-ol__list">リストリストリスト</li>
+                    </ol>
+
+                    <ul class="p-ul">
+                        <li class="p-ul__list">リストリストリスト</li>
+                        <li class="p-ul__list">リストリストリスト</li>
+                        <li>
+                            <ul class="p-ul__child">
+                                <li class="p-ul__child-list">リスト2リスト2リスト2</li>
+                                <li class="p-ul__child-list">リスト2リスト2リスト2</li>
+                            </ul>
+                        </li>    
+                    </ul>
+                    <ul class="p-ul">
+                        <li class="p-ul__list">リストリストリスト</li>
+                        <li class="p-ul__list">リストリストリスト</li>
+                    </ul>
+
+<!-- コード表示 -->
+                    <pre class="p-code">
+                        <code class="p-code__text">
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+
+<!-- 5*2の表 -->
+                    <table class="p-table">
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
+                        </tr>
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
+                        </tr>
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
+                        </tr>
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
+                        </tr>
+                        <tr class="p-table__tr">
+                            <td class="p-table__td1">テーブル</td>
+                            <td class="p-table__td2">テーブル</td>
+                        </tr>
+                    </table>
+
+<!-- 下部 -->
+                        <button class="c-button--large">ボタン</button>
+                        <p class="c-text--bold-single">boldboldboldboldboldboldbold</p>
+                </article>
+            </main>
+        </div>
+
+<!-- メニューサイドバー PC版でflexした時の右側、幅調整-->
+        <div class="c-flex--child-sidebar">
+            <div class="c-menubg"></div>
+            <aside class="l-sidebar p-sidebar">
+                <button class="p-sidebar__menu c-menu--close"></button>
+                <h4 class="p-sidebar__title c-title--sidebar"><a href="">バーガー</a></h4>
+                <ul class="p-sidebar__ul">
+                    <li class="p-sidebar__list c-list"><a href="">ハンバーガー</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">チーズバーガー</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">テリヤキバーガー</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">アボカドバーガー</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">フィッシュバーガー</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">ベーコンバーガー</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">チキンバーガー</a></li>
+                </ul>
+                <h4 class="p-sidebar__title c-title--sidebar"><a href="">サイド</a></h4>
+                <ul class="p-sidebar__ul">
+                    <li class="p-sidebar__list c-list"><a href="">ポテト</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">サラダ</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">ナゲット</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">コーン</a></li>
+                </ul>
+                <h4 class="p-sidebar__title c-title--sidebar"><a href="">ドリンク</a></h4>
+                <ul class="p-sidebar__ul">
+                    <li class="p-sidebar__list c-list"><a href="">コーラ</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">ファンタ</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">オレンジ</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">アップル</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">紅茶（Ice/Hot）</a></li>
+                    <li class="p-sidebar__list c-list"><a href="">コーヒー（Ice/Hot）</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+<!-- フッター -->
+    <footer class="l-footer p-footer">
+        <ul class="p-footer__ul">
+            <li class="p-footer__link c-link"><a href="">ショップ情報</a></li>
+            <div class="p-footer__vertical-line c-vertical-line"></div>
+            <li class="p-footer__link c-link"><a href="">ヒストリー</a></li>
+        </ul>
+        <small class="p-footer__copy c-copy">Copyright: RaiseTech</small>
+    </footer>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="../main.js"></script>
+
+</body>
+</html>

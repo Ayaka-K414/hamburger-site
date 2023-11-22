@@ -179,3 +179,15 @@
         padding-bottom: 57px;
     }
 }
+
+
+// ==================================================================================
+// shop-page
+// ==================================================================================
+.c-title--main-visual-shop {
+    @extend .c-title--main-visual-single;
+    @include tablet {
+    font-size: 6.0rem;
+    line-height: 89px;
+    }
+}
