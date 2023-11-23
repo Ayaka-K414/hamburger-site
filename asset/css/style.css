@@ -513,11 +513,6 @@ a {
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
-@media screen and (min-width: 1024px) {
-  .c-menubg.is-active {
-    display: none;
-  }
-}
 
 @-webkit-keyframes fade {
   from {

@@ -27,9 +27,6 @@
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-out;
-        @include pc {
-            display: none;
-        }
     }
 }
 
