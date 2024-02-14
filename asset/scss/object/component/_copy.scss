@@ -10,21 +10,10 @@
 @use "../../foundation/mixin" as *;
 
 
-.c-button {
-    color: $color--titleGray;
-    border: 1px solid $color--titleGray;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
-    font-family: $font--roboto;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 23.76px;  
-    width: 24vw;
-    height: 46px;
-    @include tablet {
-        width: 16.3vw;
-    }
-    @include pc {
-        width: 7.08vw;
-    }
+// ==================================================================================
+// front-page
+// ==================================================================================
+.c-copy {
+    font-size: 1.4rem;
+    line-height: 20.79px;
 }

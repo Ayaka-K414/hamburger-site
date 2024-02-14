@@ -1,0 +1,8 @@
+// 変数呼び出し
+@use "../../foundation/variable" as *;
+
+
+.c-icon {
+    color: $color--titleGray;
+    font-size: 24px;
+}

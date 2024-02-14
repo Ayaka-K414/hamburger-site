@@ -1,22 +1,47 @@
 // ==================================================================================
 // 変数呼び出し
 // ==================================================================================
-@use "../foundation/variable" as *;
+@use "../../foundation/variable" as *;
 
 
 // ==================================================================================
 // メディアクエリ呼び出し
 // ==================================================================================
-@use "../foundation/mixin" as *;
+@use "../../foundation/mixin" as *;
 
 
 // ==================================================================================
 // front-page
 // ==================================================================================
-.l-sidebar {
-    padding-top: 178px;
+.p-sidebar {
+    background-color: #F2EDE9;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: -120%;
+    width: 328px;
+    height: 100vh;
+    overflow: auto;
+    transition: all 0.3s;
+    @include tablet {
+        width: 367px;
+    }
     @include pc {
-        padding-top: 84px;
+        position: static;
+        height: 100%;
+    }
+    &.is-active {
+        right: 0;
+    }
+    &__ul {
+        padding-left: 66px;
+        padding-top: 40px;
+        padding-bottom: 60px;
     }
 }
 
+
+body.is-active {
+    height: 100vh;
+    overflow: hidden;
+}

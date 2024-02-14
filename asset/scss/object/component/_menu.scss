@@ -1,0 +1,82 @@
+// ==================================================================================
+// 変数呼び出し
+// ==================================================================================
+@use "../../foundation/variable" as *;
+
+
+// ==================================================================================
+// メディアクエリ呼び出し
+// ==================================================================================
+@use "../../foundation/mixin" as *;
+
+
+// ==================================================================================
+// Menuボタン
+// ==================================================================================
+.c-menu {
+    color: $color--titleGray;
+    font-family: $font--roboto;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    @include tablet {
+        font-size: 3.4rem;
+        line-height: 40px;
+    }
+    @include pc {
+        display: none;
+    }
+}
+
+
+// ==================================================================================
+// バツボタン
+// ==================================================================================
+.c-menu--close {
+    display: block;
+    position: relative;
+    top: -178px;
+    left: 270px;
+    width: 50px;
+    height: 50px;
+    @include tablet {
+        left: 314px;
+    }
+    @include pc {
+        display: none;
+    }
+    &::before {
+        content: "";
+        background-color: $color--titleGray;
+        position: absolute;
+        height: 6px;
+        width: 40px;
+        transform: rotate(45deg);
+        top: 22px;
+        left: 4px;
+    }
+    &::after {
+        content: "";
+        background-color: $color--titleGray;
+        position: absolute;
+        height: 6px;
+        width: 40px;
+        transform: rotate(-45deg);
+        top: 22px;
+        right: 5px;
+    }
+}
+
+.c-menu--pc {
+    display: none;
+    @include pc {
+        display: block;
+        font-family: $font--roboto;
+        font-size: 3.4rem;
+        font-weight: 700;
+        line-height: 40px;
+        color: $color--titleGray;
+        padding-left: 46px;
+        padding-bottom: 90px;
+    }
+}

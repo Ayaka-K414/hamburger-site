@@ -10,21 +10,19 @@
 @use "../../foundation/mixin" as *;
 
 
-.c-button {
-    color: $color--titleGray;
-    border: 1px solid $color--titleGray;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
-    font-family: $font--roboto;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 23.76px;  
-    width: 24vw;
-    height: 46px;
-    @include tablet {
-        width: 16.3vw;
+// ==================================================================================
+// front-page
+// ==================================================================================
+.c-link {
+    font-size: 1.8rem;
+    line-height: 26.73px;
+    a {
+    &:visited {
+        color: $color--titleWhite;
+        }
     }
     @include pc {
-        width: 7.08vw;
+        font-size: 2.0rem;
+        line-height: 30px;
     }
 }
