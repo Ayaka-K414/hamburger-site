@@ -11,16 +11,15 @@
 
 
 // ==================================================================================
-// front-page
+// single-page ul
 // ==================================================================================
-.container-main {
-    @include pc {
-        width: 80%;
+.p-ul {
+    color: $color--titleGray;
+    margin: 1em 0;
+    &:nth-child(even) {
+        text-indent: 1em;
     }
-}
-
-.flex-pc {
-    @include pc {
-        display: flex;
+    &:last-of-type {
+        padding-bottom: 40px;
     }
 }

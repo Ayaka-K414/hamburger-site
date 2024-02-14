@@ -11,16 +11,16 @@
 
 
 // ==================================================================================
-// front-page
+// all メニュー一覧の全体調整
 // ==================================================================================
 .p-sidebar {
-    background-color: #F2EDE9;
     position: fixed;
     z-index: 100;
     top: 0;
     right: -120%;
     width: 328px;
     height: 100vh;
+    background-color: #F2EDE9;
     overflow: auto;
     transition: all 0.3s;
     @include tablet {
@@ -29,19 +29,12 @@
     @include pc {
         position: static;
         height: 100%;
+        width: 100%;
     }
     &.is-active {
         right: 0;
     }
     &__ul {
-        padding-left: 66px;
-        padding-top: 40px;
-        padding-bottom: 60px;
+        padding: 40px 0 60px 66px;
     }
-}
-
-
-body.is-active {
-    height: 100vh;
-    overflow: hidden;
 }

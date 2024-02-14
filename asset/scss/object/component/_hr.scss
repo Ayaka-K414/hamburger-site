@@ -11,13 +11,12 @@
 
 
 // ==================================================================================
-// front-page
+// front-page タイトル下の横線
 // ==================================================================================
 .c-hr {
-    background-color: $color--titleWhite;
     height: 4px;
     width: 33.89px;
-    margin-left: 15.5px;
+    background-color: $color--titleWhite;
     @include tablet {
         width: 35.94px;
     }
@@ -27,9 +26,9 @@
 }
 
 .c-hr--map {
-    background-color: $color--titleWhite;
     height: 2px;
     width: 75px;
     margin-left: 42.5px;
     margin-bottom: 14px;
+    background-color: $color--titleWhite;
 }

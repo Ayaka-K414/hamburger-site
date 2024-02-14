@@ -1,9 +1,8 @@
 // Foundation
 
 @use "foundation/base";
-@use "foundation/reset";
-@use "foundation/variable";
 @use "foundation/mixin";
+@use "foundation/variable";
 
 
 // Layout
@@ -23,13 +22,11 @@
 @use "object/component/text";
 @use "object/component/hr";
 @use "object/component/link";
-@use "object/component/copy";
 @use "object/component/vertical-line";
 @use "object/component/list";
 @use "object/component/menubg";
-@use "object/component/image";
 @use "object/component/pagination";
-@use "object/component/container";
+@use "object/component/flex";
 
 
 // Project
@@ -43,6 +40,14 @@
 @use "object/project/introduction";
 @use "object/project/menu-cards";
 @use "object/project/p-pagination";
+@use "object/project/article";
+@use "object/project/blockquote";
+@use "object/project/single-fig";
+@use "object/project/photos";
+@use "object/project/ol";
+@use "object/project/ul";
+@use "object/project/code";
 
 
 // Utility
+@use "object/utility/margin";

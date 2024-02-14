@@ -11,10 +11,29 @@
 
 
 // ==================================================================================
-// archive-page
+// archive-page ページネーション全体調整
 // ==================================================================================
 .p-pagination {
-    padding: 62px 50px 32px;
     display: flex;
     justify-content: space-between;
+    padding: 42px 30px 0;
+    @include tablet {
+        justify-content: center;
+        align-items: center;
+        padding-top: 86px;
+    }
+    @include pc {
+        padding-top: 120px;
+    }
+    &__sp-flex {
+        display: flex;
+    }
+    &__notsp {
+        @include tablet {
+            margin-right: 15px;
+            &:first-child {
+                margin-right: 50px;
+            }    
+        }
+    }
 }

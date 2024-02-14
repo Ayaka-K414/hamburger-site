@@ -7,19 +7,24 @@
     <title>Hamburger-site</title>
     <link rel="stylesheet" href="../asset/css/ress.css">
     <link rel="stylesheet" href="../asset/css/style.css">
-<!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<!-- M PLUS 1p -->
+<!-- Google fonts Roboto-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- Google fonts M PLUS 1p -->
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700;900&display=swap" rel="stylesheet">
 <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4c57c614d1.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="flex-pc">
-        <div class="container-main">
+<!-- PC2カラム設定のflex親要素 -->
+    <div class="c-flex--parent-pc">
+
+<!-- フッター以外のコンテンツ全体を内包するdiv PC版でflexした時の左側、幅調整-->
+        <div class="c-flex--child-main">
+
+<!-- ヘッダー -->
             <header class="l-header p-header">
                 <h1 class="p-header__title c-title--logo"><a href="front-page.html">Hamburger</a></h1>
                 <button class="p-header__menu c-menu">Menu</button>
@@ -31,65 +36,68 @@
                 </form>
             </header>
 
+<!-- メインコンテンツ -->
             <main class="l-main">
-                <article class="p-article">
-                    <div class="p-main-visual">
-                        <h2 class="p-main-visual__title c-title--main-visual">ダミーサイト</h2>
-                    </div>
-                    <ul class="p-ordermethods">
-                        <li class="p-ordermethods__takeout">
-                            <div class="flex1">
-                                <h2 class="p-ordermethods__title c-title--ordermethods">Take Out</h2>
-                                <hr class="p-ordermethods__hr c-hr">
-                            </div>
-                            <div class="flex2">
-                                <dl class="p-ordermethods__dl1">
-                                    <a href="">
-                                        <dt class="p-ordermethods__dt c-text--bold">Take OUT</dt>
-                                        <dd class="p-ordermethods__dt c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                    </a>
-                                </dl>
-                                <dl class="p-ordermethods__dl2">
-                                    <a href="">
-                                        <dt class="p-ordermethods__dt c-text--bold">Take OUT</dt>
-                                        <dd class="p-ordermethods__dt c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                    </a>
-                                </dl>
-                            </div>
-                        </li>
-                        <li class="p-ordermethods__eatin">
-                            <div class="flex1">
-                                <h2 class="p-ordermethods__title c-title--ordermethods">Eat In</h2>
-                                <hr class="p-ordermethods__hr c-hr">
-                            </div>
-                            <div class="flex2">
-                                <dl class="p-ordermethods__dl1">
-                                    <a href="">
-                                        <dt class="p-ordermethods__dt c-text--bold">Eat In</dt>
-                                        <dd class="p-ordermethods__dt c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
-                                    </a>
-                                </dl>
-                                <dl class="p-ordermethods__dl2">
-                                    <a href="">
-                                        <dt class="p-ordermethods__dt c-text--bold">Eat In</dt>
-                                        <dd class="p-ordermethods__dt c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
-                                    </a>
-                                </dl>
-                            </div>
-                        </li>
-                    </ul>
-                    <section class="p-map">
-                        <div class="p-map__res-pc">
-                            <h2 class="pmap__title c-title--map">見出しが入ります</h2>
-                            <hr class="p-map__hr c-hr--map">
-                            <p class="p-map__text c-text--map">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+<!-- メインビジュアル -->
+                <div class="p-main-visual">
+                    <h2 class="p-main-visual__title c-title--main-visual">ダミーサイト</h2>
+                </div>
+<!-- オーダー方法のリスト -->
+                <ul class="p-ordermethods u-mgb">
+                    <li class="p-ordermethods__takeout u-mgr">
+                        <div class="p-ordermethods__flex--top c-flex">
+                            <h2 class="p-ordermethods__title c-title--ordermethods">Take Out</h2>
+                            <hr class="p-ordermethods__hr c-hr">
                         </div>
-                    </section>
-                </article>
+                        <div class="p-ordermethods__flex--bottom c-flex">
+                            <dl class="p-ordermethods__dl1">
+                                <a href="">
+                                    <dt class="p-ordermethods__dt c-text--bold">Take OUT</dt>
+                                    <dd class="p-ordermethods__dt c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </a>
+                            </dl>
+                            <dl class="p-ordermethods__dl2">
+                                <a href="">
+                                    <dt class="p-ordermethods__dt c-text--bold">Take OUT</dt>
+                                    <dd class="p-ordermethods__dt c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </a>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="p-ordermethods__eatin">
+                        <div class="p-ordermethods__flex--top c-flex">
+                            <h2 class="p-ordermethods__title c-title--ordermethods">Eat In</h2>
+                            <hr class="p-ordermethods__hr c-hr">
+                        </div>
+                        <div class="p-ordermethods__flex--bottom c-flex">
+                            <dl class="p-ordermethods__dl1">
+                                <a href="">
+                                    <dt class="p-ordermethods__dt c-text--bold">Eat In</dt>
+                                    <dd class="p-ordermethods__dt c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                                </a>
+                            </dl>
+                            <dl class="p-ordermethods__dl2">
+                                <a href="">
+                                    <dt class="p-ordermethods__dt c-text--bold">Eat In</dt>
+                                    <dd class="p-ordermethods__dt c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                                </a>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+<!-- マップ -->
+                <section class="p-map">
+                    <div class="p-map__res-pc">
+                        <h2 class="pmap__title c-title--map">見出しが入ります</h2>
+                        <hr class="p-map__hr c-hr--map">
+                        <p class="p-map__text c-text--map">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    </div>
+                </section>
             </main>
         </div>
 
-        <div class="container-sidebar">
+<!-- メニューサイドバー PC版でflexした時の右側、幅調整-->
+        <div class="c-flex--child-sidebar">
             <div class="c-menubg"></div>
             <aside class="l-sidebar p-sidebar">
                 <button class="p-sidebar__menu c-menu--close"></button>
@@ -124,13 +132,14 @@
         </div>
     </div>
 
+<!-- フッター -->
     <footer class="l-footer p-footer">
         <ul class="p-footer__ul">
             <li class="p-footer__link c-link"><a href="">ショップ情報</a></li>
             <div class="p-footer__vertical-line c-vertical-line"></div>
             <li class="p-footer__link c-link"><a href="">ヒストリー</a></li>
         </ul>
-        <small class="p-footer__copy c-copy">Copyright: RaiseTech</small>
+        <small class="p-footer__copy">Copyright: RaiseTech</small>
     </footer>
 
 <!-- JS -->

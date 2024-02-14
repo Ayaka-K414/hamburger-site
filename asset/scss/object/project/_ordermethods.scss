@@ -11,37 +11,35 @@
 
 
 // ==================================================================================
-// front-page
+// front-page オーダー方法の全体調整
 // ==================================================================================
 .p-ordermethods {
-    margin: 20px;
+    padding: 20px;
     @include tablet {
-        margin: 40px;
         display: flex;
+        justify-content: space-around;
+        padding: 40px;
     }
     @include pc {
-        margin: 7.8%;
+        padding: 7.8%;
     }
     &__takeout {
-        background-image: url(../../../../img/front-takeout.jpg);
-        background-size: cover;
-        min-height: 642px;
-        margin-bottom: 20px;
-        padding-left: 16px;
-        padding-right: 16px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        min-height: 642px;
+        padding: 0 15px;
+        margin-bottom: 20px;
+        background-image: url(../../../../img/front-takeout.jpg);
+        background-size: cover;
         @include tablet {
-            margin-right: 40px;
-            margin-bottom: 0;
-            min-height: 681px;
             width: 42.8vw;
+            min-height: 681px;
+            margin-bottom: 0;
         }
         @include pc {
-            margin-right: 5.1%;
+            width: 40.2vw;
             min-height: 1197px;
-            width: 40.2vw
         }
     }
     &__eatin {
@@ -49,19 +47,14 @@
         background-image: url(../../../../img/front-eatin.jpg);
         @include tablet {
             margin-right: 0;
-            width: 42.8vw;
-        }
-        @include pc {
-            width: 40.2vw
         }
     }
-}
-
-.flex2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.p-ordermethods__dl1, .p-ordermethods__dl2 {
-    margin-bottom: 32px;
+    &__flex--bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    &__dl1, &__dl2{
+        margin-bottom: 16px;
+    }
 }

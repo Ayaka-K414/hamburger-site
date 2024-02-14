@@ -10,12 +10,15 @@
 @use "../../foundation/mixin" as *;
 
 
+// ==================================================================================
+// all
+// ==================================================================================
 .p-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     &__ul {
         display: flex;
+    }
+    &__copy {
+        font-size: 1.4rem;
+        line-height: 20.79px;    
     }
 }

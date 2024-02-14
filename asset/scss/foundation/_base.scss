@@ -16,9 +16,11 @@ html {
 }
 
 body {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 400;
     color: $color--titleWhite;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: 'M PLUS 1p', sans-serif;
+    line-height: 23.76px;
 }
 
 li {
@@ -27,4 +29,5 @@ li {
 
 a {
     text-decoration: none;
+    color: $color--titleGray;
 }
