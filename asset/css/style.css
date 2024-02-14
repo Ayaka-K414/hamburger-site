@@ -68,11 +68,7 @@ a {
   }
 }
 
-.c-button--link {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 17px;
-  color: #707070;
+.c-button--link, .c-button--link-404 {
   display: block;
   background-color: #FFF;
   border-radius: 20px;
@@ -89,6 +85,13 @@ a {
 .c-title, .c-title--second-title, .c-title--first-title, .c-title--introduction, .c-title--second-archive-main-visual, .c-title--first-archive-main-visual, .c-title--sidebar, .c-title--map, .c-title--ordermethods, .c-title--main-visual, .c-title--logo {
   font-weight: 700;
   font-family: "M PLUS 1p", sans-serif;
+  color: #FFF;
+}
+
+.c-button--link-404 {
+  width: 300px;
+  height: 42px;
+  background-color: #3C2B1C;
   color: #FFF;
 }
 
