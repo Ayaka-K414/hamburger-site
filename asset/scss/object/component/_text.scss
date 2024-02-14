@@ -14,8 +14,6 @@
 // front-page
 // ==================================================================================
 .c-text {   // オーダー方法のテキストボックス内のテキスト
-    padding: 16px;
-    background: rgba(255, 255, 255, 0.8);
     color: $color--textBrown;
     @include tablet {
         font-size: 1.4rem;
@@ -23,12 +21,10 @@
     }
 }
 
-.c-text--bold {   // オーダー方法のテキストボックス内の見出し
+.c-text--bold {   // オーダー方法のテキストボックス内の見出し   ！！titleでコンポーネント作った方がいいかも
     @extend .c-text;
-    padding: 16px 0px 0px 16px;
     font-weight: 700;
     font-size: 2.2rem;
-    font-family: $font--MPLUS;
     line-height: 24px;
     @include tablet {
         font-size: 2.4rem;
@@ -36,13 +32,10 @@
 }
 
 .c-text--map {   // 地図のテキスト
-    padding: 0 40px 57px;
-    color: $color--titleWhite;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 33px;
     @include pc {
-        padding-top: 5%;
         line-height: 33px;
     }
 }
@@ -52,15 +45,10 @@
 // archive-page
 // ==================================================================================
 .c-text--introduction {   // イントロダクションのテキスト
-    padding-bottom: 20px;
     color: $color--textBrown;
-    @include pc {
-        padding-bottom: 40px;
-    }
 }
 
 .c-text--summary {   // カード内の説明文
-    padding-bottom: 40px;
     line-height: 24px;
 }
 
@@ -69,6 +57,10 @@
 // single-page
 // ==================================================================================
 .c-text--p {
-    @extend .c-text--introduction;
-    padding-bottom: 36px;
+    color: $color--textBrown;
+}
+
+.c-text--bold-single {
+    color: $color--textBrown;
+    font-weight: 700;
 }

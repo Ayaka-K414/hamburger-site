@@ -14,9 +14,13 @@
 // single-page コード
 // ==================================================================================
 .p-code {
-    // padding: -50px;
-    color: $color--titleGray;
+    padding: 30px 0 20px 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     background-color: $color--quote;
-    // &__text {
-    // }
+    color: $color--textBrown;
+    @include tablet {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }

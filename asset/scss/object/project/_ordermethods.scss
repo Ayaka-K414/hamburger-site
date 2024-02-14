@@ -56,5 +56,12 @@
     }
     &__dl1, &__dl2{
         margin-bottom: 16px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    &__dt {
+        padding: 16px 0 0 16px;
+    }
+    &__dd {
+        padding: 16px;
     }
 }

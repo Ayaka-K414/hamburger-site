@@ -11,23 +11,20 @@
 
 
 // ==================================================================================
-// single-page 引用のpadding等調整
+// single-page 表形式
 // ==================================================================================
-.p-blockquote {
-    padding: 30px 18px 27px 20px;
-    margin-bottom: 30px;
-    background-color: $color--quote;
-    @include tablet {
-        padding: 50px 57px 57px 50px;
-        margin-bottom: 60px;
+.p-table {
+    width: 100%;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+    color: $color--textBrown;
+    &__tr, &__td1, &__td2 {
+        border: 1px solid $color--titleGray;
     }
-    &__text {
-        padding-bottom: 4px;
-        @include tablet {
-            padding-bottom: 60px;
-        }
+    &__td1 {
+        padding: 27px 47px 27px 24px;
     }
-    &__footer {
-        padding-bottom: 0;
+    &__td2 {
+        padding: 27px 100px 27px 30px;
     }
 }

@@ -14,12 +14,16 @@
 // single-page ul
 // ==================================================================================
 .p-ul {
-    color: $color--titleGray;
-    margin: 1em 0;
-    &:nth-child(even) {
-        text-indent: 1em;
+    margin-bottom: 1em;
+    color: $color--textBrown;
+    @include tablet {
+        padding-left: 90px;
     }
-    &:last-of-type {
-        padding-bottom: 40px;
+    @include pc {
+        padding-left: 50px;
+    }
+    &__child {
+        margin-top: 1em;
+        text-indent: 1em;
     }
 }

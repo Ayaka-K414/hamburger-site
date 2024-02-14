@@ -13,3 +13,10 @@ $(".c-menu--close").on("click",function(){
     $(".c-menubg").removeClass("is-active");
     $("body").removeClass("is-active");
 });
+
+$(window).resize(function () {
+    $(".p-sidebar").removeClass("is-active");
+    $(".c-menu").removeClass("is-active");
+    $(".c-menubg").removeClass("is-active");
+    $("body").removeClass("is-active");
+});

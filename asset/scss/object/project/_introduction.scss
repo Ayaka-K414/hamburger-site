@@ -15,4 +15,18 @@
 // ==================================================================================
 .p-introduction {
     padding: 0 2px;
+    &__title {
+        @include tablet {
+            padding-bottom: 55px;
+        }
+    }
+    &__text {
+        padding-bottom: 36px;
+        @include tablet {
+            padding-bottom: 62px;
+        }
+        @include pc {
+            padding-bottom: 40px;
+        }    
+    }
 }

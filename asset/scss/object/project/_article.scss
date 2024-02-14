@@ -29,4 +29,10 @@
 // ==================================================================================
 .p-article--single {
     padding: 34px 20px 69px;
+    @include tablet {
+        padding: 60px 60px 150px;
+    }
+    @include pc {
+        padding: 63px 100px 274px 100px;
+    }
 }

@@ -14,15 +14,26 @@
 // single-page ol
 // ==================================================================================
 .p-ol {
-    color: $color--titleGray;
-    margin: 1em 0;
-	list-style-type: decimal;
+    list-style-type: decimal;
+    margin-bottom: 1em;
+    color: $color--textBrown;
+    @include tablet {
+        padding-left: 90px;
+    }
+    @include pc {
+        padding-left: 50px;
+    }
     &__list {
         list-style-type: decimal;
         list-style-position: inside;
     }
-    &:nth-child(odd) {
+    &__child {
+        margin-top: 1em;
         text-indent: 1em;
+        &-list {
+            list-style-type: decimal;
+            list-style-position: inside;
+        }
     }
     &:last-of-type {
         padding-bottom: 40px;

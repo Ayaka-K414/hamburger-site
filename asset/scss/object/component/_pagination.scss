@@ -21,14 +21,14 @@
         &::before {
             content: "\0ab";
             position: absolute;
-            top: -12px;
+            top: -2px;
             left: -26px;
             width: 17.53px;
             height: 17.07px;
             font-weight: 100;
-            font-size: 3.0rem;
+            font-size: 3.2rem;
             @include tablet {
-                top: -24px;
+                top: -14px;
                 left: -32px;
             }
         }    
@@ -43,14 +43,14 @@
         &::after {
             content: "\0bb";
             position: absolute;
-            top: -12px;
-            left: 4px;
+            top: -2px;
+            left: 2px;
             width: 17.53px;
             height: 17.07px;
             font-weight: 100;
-            font-size: 3.0rem;
+            font-size: 3.2rem;
             @include tablet {
-                top: -24px;
+                top: -14px;
                 left: -4px;
             }
         }    

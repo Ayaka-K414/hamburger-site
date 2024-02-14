@@ -21,15 +21,49 @@
         }
     & > img {
         margin: 0 auto 30px;
+        @include tablet {
+            margin: 0 auto 241px;
+        }
+        @include pc {
+            width: 581px;
+            height: 385px;
+            margin: 0 auto 60px;
+        }
+        }
+    }
+    &__ul {
+        @include tablet {
+        display: flex;
+        flex-wrap: wrap;
         }
     }
     &__list {
         margin-bottom: 20px;
+        @include tablet {
+            width: calc( (100% - 16px) / 2 );
+        }
+        @include pc {
+            width: calc( (100% - 32px) / 3 );
+            margin-right: 16px;
+        }
         img {
             width: 100%;
         }
         &:last-child {
             margin-bottom: 33px;
+            @include tablet {
+                margin-bottom: 60px;
+            }
+        }
+        &:nth-child( odd ) {
+            @include tablet {
+            margin-right: 16px;
+            }
+        }
+        @include pc {
+            &:nth-child( 3n ) {
+                margin-right: 0;
+            }
         }
     }
 }

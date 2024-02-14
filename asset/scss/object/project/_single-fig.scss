@@ -22,11 +22,16 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
-        &:nth-child(even) {
+        @include pc {
+            margin-bottom: 60px;
+        }
+        &:nth-child( even ) {
             flex-direction: row-reverse;
         }
     }
     &__img-child {
+        flex-basis: 50%;
+        flex-shrink: 0;
         img {
             width: 100%;
         }
