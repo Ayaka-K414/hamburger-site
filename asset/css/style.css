@@ -108,6 +108,13 @@ a {
   color: #FFF;
 }
 
+.c-button--link-404 {
+  width: 300px;
+  height: 42px;
+  background-color: #3C2B1C;
+  color: #FFF;
+}
+
 .c-title--logo {
   padding-top: 43px;
   color: #707070;
