@@ -1,0 +1,54 @@
+// ==================================================================================
+// 変数呼び出し
+// ==================================================================================
+@use "../../foundation/variable" as *;
+
+
+// ==================================================================================
+// メディアクエリ呼び出し
+// ==================================================================================
+@use "../../foundation/mixin" as *;
+
+
+// ==================================================================================
+// archive-page
+// ==================================================================================
+.c-pagination {
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: $color--titleGray;
+    position: relative;
+    a {
+        color: $color--titleGray;
+        &::before {
+            content: "\0ab";
+            position: absolute;
+            width: 17.53px;
+            height: 17.07px;
+            font-size: 30px;
+            font-weight: 100;
+            top: -2px;
+            left: -26px;
+        }    
+    }
+}
+
+.c-pagination--next {
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: $color--titleGray;
+    position: relative;
+    a {
+        color: $color--titleGray;
+        &::after {
+            content: "\0bb";
+            position: absolute;
+            width: 17.53px;
+            height: 17.07px;
+            font-size: 30px;
+            font-weight: 100;
+            top: -2px;
+            left: 36px;
+        }    
+    }
+}

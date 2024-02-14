@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -67,7 +68,25 @@ a {
   }
 }
 
-.c-title, .c-title--introduction, .c-title--second-archive-main-visual, .c-title--first-archive-main-visual, .c-title--sidebar, .c-title--map, .c-title--ordermethods, .c-title--main-visual, .c-title--logo {
+.c-button--link {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 17px;
+  color: #707070;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  width: 163px;
+  height: 42px;
+  text-align: center;
+  padding: 12.5px 0;
+  margin: 0 auto;
+}
+.c-button--link a {
+  color: #707070;
+}
+
+.c-title, .c-title--second-title, .c-title--first-title, .c-title--introduction, .c-title--second-archive-main-visual, .c-title--first-archive-main-visual, .c-title--sidebar, .c-title--map, .c-title--ordermethods, .c-title--main-visual, .c-title--logo {
   font-weight: 700;
   font-family: "M PLUS 1p", sans-serif;
   color: #FFF;
@@ -161,17 +180,44 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 3.6rem;
   line-height: 42px;
+  margin-left: 37px;
+}
+@media screen and (min-width: 768px) {
+  .c-title--first-archive-main-visual {
+    font-size: 6rem;
+    line-height: 70px;
+    margin-left: 86px;
+  }
 }
 
 .c-title--second-archive-main-visual {
   font-size: 1.6rem;
   line-height: 24px;
+  margin-left: 37px;
+}
+@media screen and (min-width: 768px) {
+  .c-title--second-archive-main-visual {
+    margin-left: 19px;
+  }
 }
 
 .c-title--introduction {
   font-size: 2.8rem;
   line-height: 42px;
   color: #3C2A10;
+  padding: 32px 0 25px;
+}
+
+.c-title--first-title {
+  font-size: 2rem;
+  line-height: 30px;
+  padding-bottom: 21px;
+}
+
+.c-title--second-title {
+  font-size: 1.6rem;
+  line-height: 24px;
+  padding-bottom: 7px;
 }
 
 .c-icon {
@@ -184,11 +230,11 @@ a {
   border-radius: 10px;
   background-color: #FFF;
   width: 57.6vw;
+  max-width: 364px;
   height: 46px;
   margin-right: 16px;
   font-size: 1.6rem;
   padding-left: 38px;
-  position: relative;
 }
 @media screen and (min-width: 768px) {
   .c-input {
@@ -197,20 +243,9 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .c-input {
-    width: 20.62vw;
+    width: 20vw;
+    max-width: 396px;
   }
-}
-.c-input::before {
-  content: "\f002";
-  font-weight: 900;
-  font-size: 2.4rem;
-  font-family: "Font Awesome 5 Free";
-  width: 24px;
-  height: 24px;
-  color: #808080;
-  position: absolute;
-  top: 11px;
-  left: 9px;
 }
 
 .c-menu {
@@ -335,6 +370,12 @@ a {
   color: #3C2A10;
 }
 
+.c-text--summary {
+  font-size: 1.6rem;
+  line-height: 24px;
+  padding-bottom: 40px;
+}
+
 .c-hr {
   background-color: #FFF;
   height: 4px;
@@ -441,6 +482,58 @@ a {
   margin-bottom: 0;
 }
 
+.c-pagination {
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #707070;
+  position: relative;
+}
+.c-pagination a {
+  color: #707070;
+}
+.c-pagination a::before {
+  content: "«";
+  position: absolute;
+  width: 17.53px;
+  height: 17.07px;
+  font-size: 30px;
+  font-weight: 100;
+  top: -2px;
+  left: -26px;
+}
+
+.c-pagination--next {
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #707070;
+  position: relative;
+}
+.c-pagination--next a {
+  color: #707070;
+}
+.c-pagination--next a::after {
+  content: "»";
+  position: absolute;
+  width: 17.53px;
+  height: 17.07px;
+  font-size: 30px;
+  font-weight: 100;
+  top: -2px;
+  left: 36px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-main {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flex-pc {
+    display: flex;
+  }
+}
+
 .p-main-visual, .p-main-visual--archive {
   background-image: url(../../../../img/front-main.jpg);
   background-size: cover;
@@ -456,12 +549,18 @@ a {
 
 .p-main-visual--archive {
   background-image: url(../../../../img/archive-main.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .p-main-visual--archive {
+    background-position: center;
+  }
 }
 .p-main-visual--archive::before {
   content: "";
@@ -470,6 +569,12 @@ a {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .p-main-visual--archive__flex {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .p-ordermethods {
@@ -489,7 +594,7 @@ a {
 .p-ordermethods__takeout, .p-ordermethods__eatin {
   background-image: url(../../../../img/front-takeout.jpg);
   background-size: cover;
-  height: 642px;
+  min-height: 642px;
   margin-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
@@ -501,13 +606,15 @@ a {
   .p-ordermethods__takeout, .p-ordermethods__eatin {
     margin-right: 40px;
     margin-bottom: 0;
-    height: 681px;
+    min-height: 681px;
+    width: 42.8vw;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-ordermethods__takeout, .p-ordermethods__eatin {
     margin-right: 5.1%;
-    height: 1197px;
+    min-height: 1197px;
+    width: 40.2vw;
   }
 }
 .p-ordermethods__eatin {
@@ -516,6 +623,12 @@ a {
 @media screen and (min-width: 768px) {
   .p-ordermethods__eatin {
     margin-right: 0;
+    width: 42.8vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-ordermethods__eatin {
+    width: 40.2vw;
   }
 }
 
@@ -565,6 +678,21 @@ a {
   display: flex;
   justify-content: center;
   margin: 40px 0;
+}
+.p-form__input {
+  position: relative;
+}
+.p-form__input::before {
+  content: "\f002";
+  font-weight: 900;
+  font-size: 2.4rem;
+  font-family: "Font Awesome 5 Free";
+  width: 24px;
+  height: 24px;
+  color: #808080;
+  position: absolute;
+  top: 11px;
+  left: 9px;
 }
 @media screen and (min-width: 1024px) {
   .p-form {
@@ -640,24 +768,20 @@ body.is-active {
 }
 
 .p-menu-cards {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 .p-menu-cards__summary {
   background-color: #3C2B1C;
-  padding-top: 0;
-  margin-top: 0;
+  padding: 33px 17px 44px;
+  min-height: 355px;
+}
+.p-menu-cards__list {
+  padding-top: 20px;
 }
 
-@media screen and (min-width: 1024px) {
-  .container-main {
-    width: 80%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .flex-pc {
-    display: flex;
-  }
+.p-pagination {
+  padding: 62px 50px 32px;
+  display: flex;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,22 +10,11 @@
 @use "../../foundation/mixin" as *;
 
 
-
-.c-input {
-    border: 1px solid $color--titleGray;
-    border-radius: 10px;
-    background-color: $color--titleWhite;
-    width: 57.6vw;
-    max-width: 364px;
-    height: 46px;
-    margin-right: 16px;
-    font-size: 1.6rem;
-    padding-left: 38px;
-    @include tablet {
-        width: 47.48vw;
-    }
-    @include pc {
-        width: 20vw;
-        max-width: 396px;
-    }
+// ==================================================================================
+// archive-page
+// ==================================================================================
+.p-pagination {
+    padding: 62px 50px 32px;
+    display: flex;
+    justify-content: space-between;
 }

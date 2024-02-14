@@ -51,9 +51,17 @@
 }
 
 
+// ==================================================================================
 // archive-page
+// ==================================================================================
 .c-text--introduction {
     font-size: 1.6rem;
     line-height: 24px;
     color: $color--textBrown;
+}
+
+.c-text--summary {
+    font-size: 1.6rem;
+    line-height: 24px;
+    padding-bottom: 40px;
 }
